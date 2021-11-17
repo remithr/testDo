@@ -281,17 +281,17 @@ name	String	Yes
 value	String	Yes
 
 ii. Species:
-Parameter	Data type	Required/Default
-SpeciesId	String	Yes 
-SpeciesName	String	Yes
-SpeciesQty	String	Yes
-ParentID	String	No
-LinkID	String	No
-AvailableQty	String	Yes
-AdditionalInfo	Object	Yes
-otherSpec	String	No
+	Parameter	Data type	Required/Default
+	SpeciesId	String	Yes 
+	SpeciesName	String	Yes
+	SpeciesQty	String	Yes
+	ParentID	String	No
+	LinkID	String	No
+	AvailableQty	String	Yes
+	AdditionalInfo	Object	Yes
+	otherSpec	String	No
 
-Sending a linked record 
+**Sending a linked record** 
   A user can send his received records to a fisher, farmer or trader.
 API:cmxAPI/firebase/addTxnDetails
 Request Body:
@@ -388,9 +388,10 @@ Sample Request Body :      {
   "key": "-MmvS-YlNqUQV76YSNOV"
 }
 
-2.4	Transfer Fishcoin
-a. Get Wallet balance
-o fetch Stellar wallet balance
+**2.4 Transfer Fishcoin**
+
+**a. Get Wallet balance**
+To fetch Stellar wallet balance
 API: /AccountDetails
 Request Body:
 Parameter	Data type	Required/Default
@@ -400,38 +401,40 @@ Sample Request Body: {
   "accountId":"GDC33CQDL7U3YI4MI2MFLRM7JP62TXDKBIWI4UXH2H27BOCAMJZSZZN3" 
 }
 	
-b. Transfer fishcoin
+**b. Transfer fishcoin**
 This API is used to transfer Fish assets from one account to another
 API: /transferFishAssets
 Request Body:
-Parameter	Data Type	Require/Default
-srcAcct	String	Yes
-srcSeed	String	Yes
-srcUserID	String	Yes
-destAcct	String	Yes
-destSeed	String	Yes
-destUserID	String	Yes
-Amount	float	Yes
+	Parameter	Data Type	Require/Default
+	srcAcct	String	Yes
+	srcSeed	String	Yes
+	srcUserID	String	Yes
+	destAcct	String	Yes
+	destSeed	String	Yes
+	destUserID	String	Yes
+	Amount	float	Yes
 Sample Request Body:
 {
-  "srcAcct":"GATSU64WOJDOGUMLKZP5FUJL32QM6WX5PLH4YRKK3ROWMCFPZ7RCKPI2", "srcSeed":"U2FsdGVkX1+8FNQyvOaMCZvl2R1raM6/SHLfTiUvwWeiOsV7NqRe8i3C6Joei1DTrK7DcbALVjk3d90FT+YMwUYFp2bEmyrC9Gf7SAmOxXM=",
+  "srcAcct":"GATSU64WOJDOGUMLKZP5FUJL32QM6WX5PLH4YRKK3ROWMCFPZ7RCKPI2",
+  "srcSeed":"U2FsdGVkX1+8FNQyvOaMCZvl2R1raM6/SHLfTiUvwWeiOsV7NqRe8i3C6Joei1DTrK7DcbALVjk3d90FT+YMwUYFp2bEmyrC9Gf7SAmOxXM=",
   "srcUserID":"Vkb6O6ZfLyQS1cLRbcnXJc4QnMp1",
-  "destAcct":"GAVAUZFXKZMZMXS3CTZF34AX4IHQMEYJK55CNJ4M75MV25LDTADXJUJQ", "destSeed":"U2FsdGVkX1+nBSNFrJPVu17q7IlIVcR4ub7wNr7q7BXfnsAUSlY27EiW3rqGpIeiiyDOdbBzmfZsHWsughR/CxlvurGPWGS7YwduuiK9keM=",
+  "destAcct":"GAVAUZFXKZMZMXS3CTZF34AX4IHQMEYJK55CNJ4M75MV25LDTADXJUJQ",
+  "destSeed":"U2FsdGVkX1+nBSNFrJPVu17q7IlIVcR4ub7wNr7q7BXfnsAUSlY27EiW3rqGpIeiiyDOdbBzmfZsHWsughR/CxlvurGPWGS7YwduuiK9keM=",
   "destUserID": "52QqKTpme1VAMZgsqSycLMhuTpd2",
   "amount": 0.1
 }
 
-c.	Transfer Fish Assets to Merchant Account
+**c.Transfer Fish Assets to Merchant Account**
  This API is used to transfer Fish assets to merchant account from user account
 API:/transferFishAssetsToMerchant
 Request Body :
-Parameter	Data Type	Require/Default
-srcAcct	String	Yes
-srcSeed	String	Yes
-srcUserID	String	Yes
-Amount	Float	Yes
-feesAmount	Float	Yes
-burnAmount	Integer	Yes
+	Parameter	Data Type	Require/Default
+	srcAcct	String	Yes
+	srcSeed	String	Yes
+	srcUserID	String	Yes
+	Amount	Float	Yes
+	feesAmount	Float	Yes
+	burnAmount	Integer	Yes
 
 Sample Request Body: 
 {
@@ -443,23 +446,24 @@ Sample Request Body:
   "burnAmount": "0"
 }
 
-d.	Transfer Fish Assets from merchant Account
+**d.Transfer Fish Assets from merchant Account**
  This API is used to transfer Fish assets from merchant account to another
 API:/transferFishAssetsFromMerchant
 Request Body:
-Parameter	Data Type	Require/Default
-destAcct	String	Yes
-destSeed	String	Yes
-destUserID	String	Yes
-Amount	float	Yes
+	Parameter	Data Type	Require/Default
+	destAcct	String	Yes
+	destSeed	String	Yes
+	destUserID	String	Yes
+	Amount	float	Yes
 
 Sample Request Body: {
-  "destAcct":"GATSU64WOJDOGUMLKZP5FUJL32QM6WX5PLH4YRKK3ROWMCFPZ7RCKPI2", "destSeed":"U2FsdGVkX1+8FNQyvOaMCZvl2R1raM6/SHLfTiUvwWeiOsV7NqRe8i3C6Joei1DTrK7DcbALVjk3d90FT+YMwUYFp2bEmyrC9Gf7SAmOxXM=",
+  "destAcct":"GATSU64WOJDOGUMLKZP5FUJL32QM6WX5PLH4YRKK3ROWMCFPZ7RCKPI2",
+  "destSeed":"U2FsdGVkX1+8FNQyvOaMCZvl2R1raM6/SHLfTiUvwWeiOsV7NqRe8i3C6Joei1DTrK7DcbALVjk3d90FT+YMwUYFp2bEmyrC9Gf7SAmOxXM=",
   "destUserID": "Vkb6O6ZfLyQS1cLRbcnXJc4QnMp1",
   "amount": "5"
 }
 
-e.	Write Data on Blockchain
+**e.Write Data on Blockchain**
  This API is used to write IPFS hash on the stellar blockchain, it returns the Stellar Transaction Hash
 API: /writeDataOnBlockchain
 Request Body:
@@ -487,56 +491,60 @@ Sample Request Body: {
 
 2.5	Settings
 
-a. Profile information
+**a. Profile information**
  Fetch user details using userID.
 API:/cmxAPI/firebase/getCurrentUserAccotDetailsByUId
-Request Body:
-Parameter	Data type	Required/Default
-userId	String	Yes
+	Request Body:
+	Parameter	Data type	Required/Default
+	userId	String	Yes
 
 Sample Request Body : {
   "userId": "52QqKTpme1VAMZgsqSycLMhuTpd"
 }
 
-b. Transaction Log
-i. Debit transaction logs of user
+**b. Transaction Log**
+
+**i. Debit transaction logs of user**
  Fetch user debit logs using userID.
 API:/cmxAPI/firebase/getDebitTxnLogListByUserID
 
 Request Body:
-Parameter	Data type	Required/Default
-userId	String	Yes 
+	Parameter	Data type	Required/Default
+	userId	String	Yes 
 
 Sample Request Body : {
   "userId": "52QqKTpme1VAMZgsqSycLMhuTpd"
 }
-ii. Credit transaction logs of user
+
+**ii. Credit transaction logs of user**
  Fetch user credit logs using userID.
 API: /cmxAPI/firebase/getCreditTxnLogListByUserID
 
 Request Body:
-Parameter	Data type	Required/Default
-userId	String	Yes 
+	Parameter	Data type	Required/Default
+	userId	String	Yes 
 
 Sample Request Body : {
   "userId": "52QqKTpme1VAMZgsqSycLMhuTpd"
 }
 
-c. Invites Management
-i. Send an Invite
+**c. Invites Management**
+
+**i. Send an Invite**
  Send a connection request to a registered mFish user.
 API: /cmxAPI/firebase/addInvite
 Request Body: 
-Parameter	Data Type	Require/Default
-countryCode	String	Yes
-sLoginId	String	Yes
-rLoginId	String	Yes
-Accepted	String	Yes
-CreatedDate	String	Yes
+	Parameter	Data Type	Require/Default
+	countryCode	String	Yes
+	sLoginId	String	Yes
+	rLoginId	String	Yes
+	Accepted	String	Yes
+	CreatedDate	String	Yes
 
 Note: (sLoginId : Logged in user login ID/email
 rLoginId :LoginID/ email of the user who the invite is supposed to be for. 
 accepted: Status can be a string ‘accepted’ or ‘pending’, default to be sent as pending )
+
 Sample Request Body :
  {
  "countryCode": "+91",
@@ -555,32 +563,32 @@ Sample Request Body :
   "FcmToken": ""
 }
 
-ii. Accept an invite
+**ii. Accept an invite**
  Once user accepts a connection request, we can update the status and show connections accordingly.
 API:/cmxAPI/firebase/updateInviteLog
 Request Body:
-Parameter	Data type	Required/Default
-Accepted	String	Yes 
-Key	String	Yes
-{ "accepted": required, "key": required }
+	Parameter	Data type	Required/Default
+	Accepted	String	Yes 
+	Key	String	Yes
+
 Sample Request Body :
   { 
    "accepted": "accepted",
     "key": "-MnZRBqajkQBDc_XV-7C"
   }
 
-iii. Reject an Invite
+**iii. Reject an Invite**
 Will reject the connection request or an accepted connection and delete the log from user connections.
 API:/cmxAPI/firebase/deleteInviteLog
 Request Body:
-Parameter	Data type	Required/Default
-Key	String	Yes
+	Parameter	Data type	Required/Default
+	Key	String	Yes
 
 Sample Request Body : { 
  "key": "-MnZRBqajkQBDc_XV-7C"
 }
 
-iv. Fetch Sent Invites
+**iv. Fetch Sent Invites**
 Fetch all the invites sent by the user. Using the status as flag we can show the connections that are pending to accept and existing connection.
 API:/cmxAPI/firebase/getInvitesBySenderID
 Request Body:
@@ -591,7 +599,7 @@ Sample Request Body : {
   "userId": "52QqKTpme1VAMZgsqSycLMhuTpd"
 }
 
-v. Received Invites
+**v. Received Invites**
  Fetch all the invites received by the user. Using the status as flag we can show the connections that are pending to accept and existing connection.
 API:/cmxAPI/firebase/getInvitesByReceiverID
 Request Body:
@@ -602,10 +610,10 @@ Sample Request Body: {
   "userId": "52QqKTpme1VAMZgsqSycLMhuTpd"
 }
 
-2.6 Find your transactions on test net.
-a.	Fetch the transaction hash from the transaction and go to Stellar test net URL to find details.
-http://testnet.stellarchain.io/tx/txn_hash_here
+**2.6 Find your transactions on test net.**
+a.Fetch the transaction hash from the transaction and go to Stellar test net URL to find details.
+	http://testnet.stellarchain.io/tx/txn_hash_here
 Example:
-hash= ffa62016e1c20e5042ca59c2979545e20f6fa02de36824286515e12dd5e6abf9
+	hash= ffa62016e1c20e5042ca59c2979545e20f6fa02de36824286515e12dd5e6abf9
 Then below is the blockchain tracking URL-
-http://testnet.stellarchain.io/tx/ffa62016e1c20e5042ca59c2979545e20f6fa02de36824286515e12dd5e6abf9
+	http://testnet.stellarchain.io/tx/ffa62016e1c20e5042ca59c2979545e20f6fa02de36824286515e12dd5e6abf9
