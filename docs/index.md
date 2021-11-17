@@ -1,23 +1,23 @@
-Contents
-1. WHAT IS MFISH?
-	1.1 FUNCTIONALITIES OF MFISH
-2. MFISH API REFERENCE
-	2.1	STEPS FOR SIGNUP
-	2.2	USER AUTHENTICATION API
-	2.3	TRANSFER RECORDS
-	2.4	TRANSFER FISHCOIN
-	2.5	SETTINGS
-		A. PROFILE INFORMATION
-		B. TRANSACTION LOG
-			I. DEBIT TRANSACTION LOGS OF USER
-			II. CREDIT TRANSACTION LOGS OF USER
-		C. INVITES MANAGEMENT
-			I. SEND AN INVITE
-			II. ACCEPT AN INVITE
-			III. REJECT AN INVITE
-			IV. FETCH SENT INVITES
-			V. RECEIVED INVITES
-	2.6 FIND YOUR TRANSACTIONS ON TEST NET
+#Contents
+1. WHAT IS MFISH?<br/>
+	- 1.1 FUNCTIONALITIES OF MFISH<br/>
+2. MFISH API REFERENCE<br/>
+	- 2.1. STEPS FOR SIGNUP<br/>
+	- 2.2. USER AUTHENTICATION API<br/>
+	- 2.3. TRANSFER RECORDS<br/>
+	- 2.4. TRANSFER FISHCOIN<br/>
+	- 2.5. SETTINGS<br/>
+		- A. PROFILE INFORMATION<br/>
+		- B. TRANSACTION LOG<br/>
+			- I. DEBIT TRANSACTION LOGS OF USER<br/>
+			- II. CREDIT TRANSACTION LOGS OF USER<br/>
+		- C. INVITES MANAGEMENT<br/>
+			- I. SEND AN INVITE<br/>
+			- II. ACCEPT AN INVITE<br/>
+			- III. REJECT AN INVITE<br/>
+			- IV. FETCH SENT INVITES<br/>
+			- V. RECEIVED INVITES<br/>
+	- 2.6 FIND YOUR TRANSACTIONS ON TEST NET<br/>
 
 **Introduction**
 Fish and other sea food products are harvested, processed by farmers and then sold to local suppliers. They provide these to region suppliers who in turn sells it to the customers. But the industry is often unsustainable, illegal and inefficient.   
@@ -43,11 +43,10 @@ It is an application programming interface, enablesto open up applications’ da
 **2.	mFishAPI reference**
 Welcome to the mFish API reference.
 This API serves as the primary gateway to facilitate digital values transfer through mFish.
-Links to access-
-Interface	URL 
-	a. Website URL	http://52.163.83.160:7771
-	b. Firebase Swagger	http://52.163.83.160:7772/API-docs
-	c. Blockchain Swagger	http://52.163.83.160:7773/API-docs/#/
+Links to access<br/>
+	-[Website](http://52.163.83.160:7771)<br/>
+	-[Firebase Swagger](http://52.163.83.160:7772/API-docs)<br/>
+	-[Blockchain Swagger](http://52.163.83.160:7773/API-docs/#/)<br/>
 
 
 
