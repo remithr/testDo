@@ -448,14 +448,14 @@ Sample Request Body:
 API:/transferFishAssetsToMerchant<br/>
 Request Body : <br/>
 
-	Parameter | Data type | Required/Default
-	--------- | --------- | --------
-	srcAcct | String | Yes
-	srcSeed | String | Yes
-	srcUserID | String | Yes
-	Amount | Float | Yes
-	feesAmount | Float | Yes
-	burnAmount | Integer | Yes
+Parameter | Data type | Required/Default
+--------- | --------- | --------
+srcAcct | String | Yes
+srcSeed | String | Yes
+srcUserID | String | Yes
+Amount | Float | Yes
+feesAmount | Float | Yes
+burnAmount | Integer | Yes
 
 Sample Request Body: 
 {
@@ -472,12 +472,12 @@ Sample Request Body:
 API:/transferFishAssetsFromMerchant <br/>
 Request Body: <br/>
 
-	Parameter | Data type | Required/Default
-	--------- | --------- | --------
-	destAcct | String | Yes
-	destSeed | String | Yes
-	destUserID | String | Yes
-	Amount | float | Yes
+Parameter | Data type | Required/Default
+--------- | --------- | --------
+destAcct | String | Yes
+destSeed | String | Yes
+destUserID | String | Yes
+Amount | float | Yes
 
 Sample Request Body: {
   "destAcct":"GATSU64WOJDOGUMLKZP5FUJL32QM6WX5PLH4YRKK3ROWMCFPZ7RCKPI2",
@@ -491,16 +491,16 @@ Sample Request Body: {
 API: /writeDataOnBlockchain<br/>
 Request Body:<br/>
 
-	Parameter | Data type | Required/Default
-	--------- | --------- | --------
-	jsonData | String | Yes
-	destAcct | String | Yes
-	destSeed | String | Yes
-	destUserID | String | Yes
-	srcAcct | String | Yes
-	srcSeed | String | Yes
-	srcUserID | String | Yes
-	amount | float | Yes
+Parameter | Data type | Required/Default
+--------- | --------- | --------
+jsonData | String | Yes
+destAcct | String | Yes
+destSeed | String | Yes
+destUserID | String | Yes
+srcAcct | String | Yes
+srcSeed | String | Yes
+srcUserID | String | Yes
+amount | float | Yes
 
 Sample Request Body: {
   "jsonData":"{\"AddAndLocOfFarm\":\"Satpur\",\"ArrivalDate\":\"2021-10-29T12:04:23.242+05:30\",\"ArrivalPort\":\"\",\"Country\":\"India\",\"CreatedDate\":\"10 29 2021 12:04:54\",\"CultureUnitID\":\"axa\",\"CultureUnitLocation\":\"EWR\",\"DeparturePort\":\"\",\"FishcoinAssets\":1,\"IsDeleted\":false,\"LicenseAndPermitNumber\":\"ABZ897654\",\"NameOfFarmAndCompany\":\"Winjit\",\"RecdRole\":\"Farmer\",\"RecdUId\":\"Vkb6O6ZfLyQS1cLRbcnXJc4QnMp1\",\"ReceiverName\":\"Remith Test\",\"SenderName\":\"Remith UAT\",\"SentUId\":\"52QqKTpme1VAMZgsqSycLMhuTpd2\",\"Species\":[{\"AdditionalInfo\":[{\"name\":\"\",\"value\":\"\"}],\"AvailableQty\":1,\"LinkID\":\"\",\"ParentID\":\"-Mn9kXxpm2Ef9MSk2CM3\",\"SpeciesId\":\"tt4ymk\",\"SpeciesName\":\"Carp - Common\",\"SpeciesQty\":1,\"otherSpec\":\"\"}],\"Status\":\"Pending\",\"TxnHash\":\"\",\"TxnLinkID\":\"-Mn9kXxpm2Ef9MSk2CM3\",\"TxnStep\":0,\"UserName\":\"Remith UAT\",\"additionalInfo\":[{\"name\":\"\",\"value\":\"\"}],\"isRead\":false,\"key\":\"-Mn9kYH_aUOenodB3Zu7\"}",
@@ -520,10 +520,10 @@ Sample Request Body: {
 Fetch user details using userID.<br/>
 API:/cmxAPI/firebase/getCurrentUserAccotDetailsByUId<br/>
 Request Body:<br/>
-	
-	Parameter | Data type | Required/Default
-	--------- | --------- | --------
-	userId | String | Yes
+
+Parameter | Data type | Required/Default
+--------- | --------- | --------
+userId | String | Yes
 
 Sample Request Body : {
   "userId": "52QqKTpme1VAMZgsqSycLMhuTpd"
@@ -536,9 +536,9 @@ Sample Request Body : {
 API:/cmxAPI/firebase/getDebitTxnLogListByUserID<br/>
 Request Body:<br/>
 
-	Parameter | Data type | Required/Default
-	--------- | --------- | --------
-	userId | String | Yes
+Parameter | Data type | Required/Default
+--------- | --------- | --------
+userId | String | Yes
 
 Sample Request Body : {
   "userId": "52QqKTpme1VAMZgsqSycLMhuTpd"
@@ -549,9 +549,9 @@ Fetch user credit logs using userID.<br/>
 API: /cmxAPI/firebase/getCreditTxnLogListByUserID<br/>
 Request Body:<br/>
 
-	Parameter | Data type | Required/Default
-	--------- | --------- | --------
-	userId | String | Yes 
+Parameter | Data type | Required/Default
+--------- | --------- | --------
+userId | String | Yes 
 
 Sample Request Body : {
   "userId": "52QqKTpme1VAMZgsqSycLMhuTpd"
@@ -564,13 +564,13 @@ Sample Request Body : {
 API: /cmxAPI/firebase/addInvite<br/>
 Request Body: <br/>
 
-	Parameter | Data type | Required/Default
-	--------- | --------- | --------
-	countryCode | String | Yes
-	sLoginId | String | Yes
-	rLoginId | String | Yes
-	Accepted | String | Yes
-	CreatedDate | String | Yes
+Parameter | Data type | Required/Default
+--------- | --------- | --------
+countryCode | String | Yes
+sLoginId | String | Yes
+rLoginId | String | Yes
+Accepted | String | Yes
+CreatedDate | String | Yes
 
 Note: sLoginId : Logged in user login ID/email<br/>
 rLoginId :LoginID/ email of the user who the invite is supposed to be for.<br/>
@@ -599,10 +599,10 @@ Once user accepts a connection request, we can update the status and show connec
 API:/cmxAPI/firebase/updateInviteLog<br/>
 Request Body:<br/>
 
-	Parameter | Data type | Required/Default
-	--------- | --------- | --------
-	Accepted	String	Yes 
-	Key	String	Yes
+Parameter | Data type | Required/Default
+--------- | --------- | --------
+Accepted	String	Yes 
+Key	String	Yes
 
 Sample Request Body :
   { 
@@ -615,9 +615,9 @@ Will reject the connection request or an accepted connection and delete the log 
 API:/cmxAPI/firebase/deleteInviteLog<br/>
 Request Body:<br/>
 
-	Parameter | Data type | Required/Default
-	--------- | --------- | ----------------
-	Key | String | Yes
+Parameter | Data type | Required/Default
+--------- | --------- | ----------------
+Key | String | Yes
 
 Sample Request Body : { 
  "key": "-MnZRBqajkQBDc_XV-7C"
@@ -628,9 +628,9 @@ Fetch all the invites sent by the user. Using the status as flag we can show the
 API:/cmxAPI/firebase/getInvitesBySenderID<br/>
 Request Body:<br/>
 
-	Parameter | Data type | Required/Default
-	--------- | --------- | ----------------
-	userId | String | Yes 
+Parameter | Data type | Required/Default
+--------- | --------- | ----------------
+userId | String | Yes
 
 Sample Request Body : {
   "userId": "52QqKTpme1VAMZgsqSycLMhuTpd"
@@ -641,9 +641,9 @@ Sample Request Body : {
 API:/cmxAPI/firebase/getInvitesByReceiverID<br/>
 Request Body:
 
-	Parameter | Data type | Required/Default
-	--------- | --------- | ----------------
-	userId | String | Yes 
+Parameter | Data type | Required/Default
+--------- | --------- | ----------------
+userId | String | Yes 
 
 Sample Request Body: {
   "userId": "52QqKTpme1VAMZgsqSycLMhuTpd"
