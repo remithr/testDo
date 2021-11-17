@@ -62,10 +62,10 @@ API: UserAuthentication<br/>
 Endpoint:cmxAPI/firebase/userAuthentication<br/>
 Request Body Parameters:<br/>
 
-	Parameter | Data type | Required
-	--------- |-----------|---------
-	email     |  String   | Yes
-	password  |  String   | Yes
+Parameter | Data type | Required
+----------|-----------|---------
+email     |   String  |   Yes
+password  |   String  |   Yes
 
 Sample Request Body:{
   "email": "rem@yopmail.com",
@@ -88,9 +88,9 @@ Sample Request Body:{
 }
 
 - **2. Fetching received records.**<br/>
-This API will fetch all the records that are received by user from fisher, farmer, trader along with status of records.
-Endpoint:cmxAPI/firebase/getReceivedRecordsByUser
-Request Body Parameters:
+This API will fetch all the records that are received by user from fisher, farmer, trader along with status of records.<br/>
+Endpoint:cmxAPI/firebase/getReceivedRecordsByUser<br/>
+Request Body Parameters:<br/>
 
 	Parameter | Data type | Required
 	--------- |-----------|---------
@@ -101,28 +101,28 @@ Sample Request Body: {
 }
 
 - **3.Fetching country list.**<br/>
-Used to fetch all the countries with country code.
-Endpoint:cmxAPI/firebase/getCountryList
-Method:GET
+Used to fetch all the countries with country code.<br/>
+Endpoint:cmxAPI/firebase/getCountryList<br/>
+Method:GET<br/>
 
 - **4.Get Major Fishing Area.**<br/>
-Used to fetch the Fishing Area for Fisher, Farmer
-Endpoint: cmxAPI/firebase/getFAOMajorFishingArea
-Method: GET
+Used to fetch the Fishing Area for Fisher, Farmer<br/>
+Endpoint: cmxAPI/firebase/getFAOMajorFishingArea<br/>
+Method: GET<br/>
 
 - **5.Get Fishing gear.**<br/>
-Used to fetch different types of fishing gears available
-Endpoint:cmxAPI/firebase/getFishingGear
-Method:GET
+Used to fetch different types of fishing gears available<br/>
+Endpoint:cmxAPI/firebase/getFishingGear<br/>
+Method:GET<br/>
 
 - **6.Get Margin Amount.**<br/>
-Marging amount for merchant transactions
-Endpoint:cmxAPI/firebase/getMarginAmount
-Method: GET
+Marging amount for merchant transactions<br/>
+Endpoint:cmxAPI/firebase/getMarginAmount<br/>
+Method: GET<br/>
 
 - **7.Sending a record.**<br/>
-A user can send a record to Fisher Farmer or Trader. The request body will change as per the role of the sender.
-Endpoint:cmxAPI/firebase/getReceivedRecordsByUser
+A user can send a record to Fisher Farmer or Trader. The request body will change as per the role of the sender.<br/>
+Endpoint:cmxAPI/firebase/getReceivedRecordsByUser<br/>
 
 Request Body:<br/>
 - a.Fisher:<br/>
@@ -246,32 +246,34 @@ Example.
 Example- {"ArrivalPort":"","DeparturePort":"","DepartureDate":null,"CultureUnitLocation":"EWR","CultureUnitID":"NSK666","ArrivalDate":"2021-11-10T12:16:56.629+05:30","RecdRole":"Farmer","Status":"Log","SentUId":"52QqKTpme1VAMZgsqSycLMhuTpd2","RecdUId":"","TxnStep":0,"TxnHash":"","TxnLinkID":"","IsDeleted":false,"isRead":false,"CreatedDate":"11 10 2021 12:18:13","Species":[{"SpeciesId":"kv7gl","SpeciesName":"Flounder - Olive","SpeciesQty":1,"ParentID":"","LinkID":"","AvailableQty":1,"AdditionalInfo":[{"name":"name1","value":"value1"}],"otherSpec":""}],"additionalInfo":[{"name":"ext","value":"extvalue"}],"UserName":"Remith UAT","SenderName":"Remith UAT","LicenseAndPermitNumber":"ABZ897654","Country":"India","NameOfFarmAndCompany":"Winjit","AddAndLocOfFarm":"Satpur","FishcoinAssets":1}
 
 - c. Trader: 
-	Parameter	Data type	Required/Default
-	ArrivalPort	String	No
-	DeparturePort	String	N0
-	DepartureDate	String	Yes-Null
-	ArrivalDate	String	Yes
-	CultureUnitLocation	String	No
-	CultureUnitID	String	No
-	RecdRole	String	Yes
-	Status	String	Yes
-	SentUId	String	Yes
-	RecdUId	String	No
-	TxnStep	Integer	Yes
-	TxnHash	String	No
-	TxnLinkID	String	No
-	IsDeleted	Boolean	Yes-False
-	IsRead	Boolean	Yes-False
-	CreatedDate	String	Yes
-	Species	String	Yes
-	additionalInfo	Array	No
-	UserName	String	Yes
-	SenderName	String	Yes
-	LicenseAndPermitNumber	String	Yes
-	Country	String	Yes
-	NameOfFarmAndCompany	String	Yes
-	AddAndLocOfFarm	String	Yes
-	FishcoinAssets	String	Yes
+
+	Parameter | Data type | Required/Default
+	--------- | --------- | --------
+	ArrivalPort | String | No
+	DeparturePort | String | N0
+	DepartureDate | String | Yes-Null
+	ArrivalDate | String | Yes
+	CultureUnitLocation | String | No
+	CultureUnitID | String | No
+	RecdRole | String | Yes
+	Status | String | Yes
+	SentUId | String | Yes
+	RecdUId | String | No
+	TxnStep | Integer | Yes
+	TxnHash | String | No
+	TxnLinkID | String | No
+	IsDeleted | Boolean | Yes-False
+	IsRead | Boolean | Yes-False
+	CreatedDate | String | Yes
+	Species | String | Yes
+	additionalInfo | Array | No
+	UserName | String | Yes
+	SenderName | String | Yes
+	LicenseAndPermitNumber | String | Yes
+	Country | String | Yes
+	NameOfFarmAndCompany | String | Yes
+	AddAndLocOfFarm | String | Yes
+	FishcoinAssets | String | Yes
 
 Example:
 	{"ArrivalPort":"","DeparturePort":"","DepartureDate":null,"CultureUnitLocation":"LAX","CultureUnitID":"NSK777","ArrivalDate":"2021-11-10T12:26:51.874+05:30","RecdRole":"Farmer","Status":"Log","SentUId":"52QqKTpme1VAMZgsqSycLMhuTpd2","RecdUId":"","TxnStep":0,"TxnHash":"","TxnLinkID":"","IsDeleted":false,"isRead":false,"CreatedDate":"11 10 2021 12:27:44","Species":[{"SpeciesId":"se212e","SpeciesName":"Carp - Black","SpeciesQty":1,"ParentID":"","LinkID":"","AvailableQty":1,"AdditionalInfo":[{"name":"name1","value":"value1"}],"otherSpec":""}],"additionalInfo":[{"name":"aname1","value":"avalue1"}],"UserName":"Remith UAT","SenderName":"Remith UAT","LicenseAndPermitNumber":"ABZ897654","Country":"India","NameOfFarmAndCompany":"Winjit","AddAndLocOfFarm":"Satpur","FishcoinAssets":5}
@@ -280,44 +282,52 @@ Example:
 - Status can be - log, accepted, pending
 - Species and additional info are common for Fisher, Farmer and Trader and a sample Parameters would look like below.
 - i. additionalInfo :
-	Parameter	Data type	Required/Default
-	name	String	Yes 
-	value	String	Yes
+
+	Parameter | Data type | Required/Default
+	--------- | --------- | --------
+	name | String | Yes 
+	value | String | Yes
+	
 - ii. Species:
-	Parameter	Data type	Required/Default
-	SpeciesId	String	Yes 
-	SpeciesName	String	Yes
-	SpeciesQty	String	Yes
-	ParentID	String	No
-	LinkID	String	No
-	AvailableQty	String	Yes
-	AdditionalInfo	Object	Yes
-	otherSpec	String	No
+	
+	Parameter | Data type | Required/Default
+	--------- | --------- | --------
+	SpeciesId | String | Yes 
+	SpeciesName | String | Yes
+	SpeciesQty | String | Yes
+	ParentID | String | No
+	LinkID | String | No
+	AvailableQty | String | Yes
+	AdditionalInfo | Object | Yes
+	otherSpec | String | No
+	
 **8. Sending a linked record**<br/>
   A user can send his received records to a fisher, farmer or trader.
 API:cmxAPI/firebase/addTxnDetails
 Request Body:
-	Parameter	Data type	Required/Default
-	isRead	Boolean	Yes– false
-	ArrivalPort	String	N0
-	DeparturePort	String	No
-	DepartureDate	String	Yes- NULL
-	RecdRole	String	No
-	SendUId	String	Yes
-	RecdUId	String	Yes
-	Status	String	Yes
-	TxnStep	Integer	Yes
-	TxnHash	String	No
-	TxnLinkID	String	No
-	IsDeleted	Boolean	Yes- false
-	Species	String	Yes
-	additionalInfo	Object	Yes
-	UserName	String	Yes
-	LicenseAndPermitNumber	String	Yes
-	AddAndLocOfFarm	String	Yes
-	FishcoinAssets	String	Yes
-	SenderName	String	Yes
-	ReceiverName	String	Yes
+
+	Parameter | Data type | Required/Default
+	--------- | --------- | --------
+	isRead | Boolean | Yes– false
+	ArrivalPort | String | N0
+	DeparturePort | String | No
+	DepartureDate | String | Yes- NULL
+	RecdRole | String | No
+	SendUId | String | Yes
+	RecdUId | String | Yes
+	Status | String | Yes
+	TxnStep | Integer | Yes
+	TxnHash | String | No
+	TxnLinkID | String | No
+	IsDeleted | Boolean | Yes- false
+	Species | String | Yes
+	additionalInfo | Object | Yes
+	UserName | String | Yes
+	LicenseAndPermitNumber | String | Yes
+	AddAndLocOfFarm | String | Yes
+	FishcoinAssets | String | Yes
+	SenderName | String | Yes
+	ReceiverName | String | Yes
 
 Sample Request Body : {
   "isRead": false,
@@ -381,41 +391,47 @@ Sample Request Body : {
 }
 
 **9. Fetch record details**<br/>
-  Get transaction details using transaction key
-API:cmxAPI/firebase/getTxnbyKey
+  Get transaction details using transaction key<br/>
+API:cmxAPI/firebase/getTxnbyKey<br/>
 Request Body:
-Parameter	Data type	Required/Default
-Key	String	Yes
+
+	Parameter | Data type | Required/Default
+	--------- | --------- | --------
+	Key | String | Yes
 
 Sample Request Body :      {
   "key": "-MmvS-YlNqUQV76YSNOV"
 }
 
 **2.4 Transfer Fishcoin**<br/>
-
-**a. Get Wallet balance**<br/>
-To fetch Stellar wallet balance
-API: /AccountDetails
+- **a. Get Wallet balance**<br/>
+To fetch Stellar wallet balance<br/>
+API: /AccountDetails<br/>
 Request Body:
-Parameter	Data type	Required/Default
-accountId	String	Yes
+
+	Parameter | Data type | Required/Default
+	--------- | --------- | --------
+	accountId | String | Yes
 
 Sample Request Body: {
   "accountId":"GDC33CQDL7U3YI4MI2MFLRM7JP62TXDKBIWI4UXH2H27BOCAMJZSZZN3" 
 }
+
+- **b. Transfer fishcoin**<br/>
+This API is used to transfer Fish assets from one account to another<br/>
+API: /transferFishAssets<br/>
+Request Body:<br/>
+
+	Parameter | Data type | Required/Default
+	--------- | --------- | --------
+	srcAcct | String | Yes
+	srcSeed | String | Yes
+	srcUserID | String | Yes
+	destAcct | String | Yes
+	destSeed | String | Yes
+	destUserID | String | Yes
+	Amount | float | Yes
 	
-**b. Transfer fishcoin**<br/>
-This API is used to transfer Fish assets from one account to another
-API: /transferFishAssets
-Request Body:
-	Parameter	Data Type	Require/Default
-	srcAcct	String	Yes
-	srcSeed	String	Yes
-	srcUserID	String	Yes
-	destAcct	String	Yes
-	destSeed	String	Yes
-	destUserID	String	Yes
-	Amount	float	Yes
 Sample Request Body:
 {
   "srcAcct":"GATSU64WOJDOGUMLKZP5FUJL32QM6WX5PLH4YRKK3ROWMCFPZ7RCKPI2",
@@ -428,16 +444,18 @@ Sample Request Body:
 }
 
 **c.Transfer Fish Assets to Merchant Account**<br/>
- This API is used to transfer Fish assets to merchant account from user account
-API:/transferFishAssetsToMerchant
+ This API is used to transfer Fish assets to merchant account from user account<br/>
+API:/transferFishAssetsToMerchant<br/>
 Request Body :
-	Parameter	Data Type	Require/Default
-	srcAcct	String	Yes
-	srcSeed	String	Yes
-	srcUserID	String	Yes
-	Amount	Float	Yes
-	feesAmount	Float	Yes
-	burnAmount	Integer	Yes
+
+	Parameter | Data type | Required/Default
+	--------- | --------- | --------
+	srcAcct | String | Yes
+	srcSeed | String | Yes
+	srcUserID | String | Yes
+	Amount | Float | Yes
+	feesAmount | Float | Yes
+	burnAmount | Integer | Yes
 
 Sample Request Body: 
 {
@@ -453,11 +471,13 @@ Sample Request Body:
  This API is used to transfer Fish assets from merchant account to another
 API:/transferFishAssetsFromMerchant
 Request Body:
-	Parameter	Data Type	Require/Default
-	destAcct	String	Yes
-	destSeed	String	Yes
-	destUserID	String	Yes
-	Amount	float	Yes
+
+	Parameter | Data type | Required/Default
+	--------- | --------- | --------
+	destAcct | String | Yes
+	destSeed | String | Yes
+	destUserID | String | Yes
+	Amount | float | Yes
 
 Sample Request Body: {
   "destAcct":"GATSU64WOJDOGUMLKZP5FUJL32QM6WX5PLH4YRKK3ROWMCFPZ7RCKPI2",
@@ -470,15 +490,17 @@ Sample Request Body: {
  This API is used to write IPFS hash on the stellar blockchain, it returns the Stellar Transaction Hash
 API: /writeDataOnBlockchain
 Request Body:
-Parameter	Data Type	Require/Default
-jsonData	String	Yes
-destAcct	String	Yes
-destSeed	String	Yes
-destUserID	String	Yes
-srcAcct	String	Yes
-srcSeed	String	Yes
-srcUserID	String	Yes
-amount	float	Yes
+
+	Parameter | Data type | Required/Default
+	--------- | --------- | --------
+	jsonData | String | Yes
+	destAcct | String | Yes
+	destSeed | String | Yes
+	destUserID | String | Yes
+	srcAcct | String | Yes
+	srcSeed | String | Yes
+	srcUserID | String | Yes
+	amount | float | Yes
 
 Sample Request Body: {
   "jsonData":"{\"AddAndLocOfFarm\":\"Satpur\",\"ArrivalDate\":\"2021-10-29T12:04:23.242+05:30\",\"ArrivalPort\":\"\",\"Country\":\"India\",\"CreatedDate\":\"10 29 2021 12:04:54\",\"CultureUnitID\":\"axa\",\"CultureUnitLocation\":\"EWR\",\"DeparturePort\":\"\",\"FishcoinAssets\":1,\"IsDeleted\":false,\"LicenseAndPermitNumber\":\"ABZ897654\",\"NameOfFarmAndCompany\":\"Winjit\",\"RecdRole\":\"Farmer\",\"RecdUId\":\"Vkb6O6ZfLyQS1cLRbcnXJc4QnMp1\",\"ReceiverName\":\"Remith Test\",\"SenderName\":\"Remith UAT\",\"SentUId\":\"52QqKTpme1VAMZgsqSycLMhuTpd2\",\"Species\":[{\"AdditionalInfo\":[{\"name\":\"\",\"value\":\"\"}],\"AvailableQty\":1,\"LinkID\":\"\",\"ParentID\":\"-Mn9kXxpm2Ef9MSk2CM3\",\"SpeciesId\":\"tt4ymk\",\"SpeciesName\":\"Carp - Common\",\"SpeciesQty\":1,\"otherSpec\":\"\"}],\"Status\":\"Pending\",\"TxnHash\":\"\",\"TxnLinkID\":\"-Mn9kXxpm2Ef9MSk2CM3\",\"TxnStep\":0,\"UserName\":\"Remith UAT\",\"additionalInfo\":[{\"name\":\"\",\"value\":\"\"}],\"isRead\":false,\"key\":\"-Mn9kYH_aUOenodB3Zu7\"}",
@@ -495,11 +517,13 @@ Sample Request Body: {
 **2.5. Settings**<br/>
 
 **a. Profile information**<br/>
- Fetch user details using userID.
-API:/cmxAPI/firebase/getCurrentUserAccotDetailsByUId
+ Fetch user details using userID.<br/>
+API:/cmxAPI/firebase/getCurrentUserAccotDetailsByUId<br/>
 	Request Body:
-	Parameter	Data type	Required/Default
-	userId	String	Yes
+	
+	Parameter | Data type | Required/Default
+	--------- | --------- | --------
+	userId | String | Yes
 
 Sample Request Body : {
   "userId": "52QqKTpme1VAMZgsqSycLMhuTpd"
@@ -508,24 +532,28 @@ Sample Request Body : {
 **b. Transaction Log**<br/>
 
 **i. Debit transaction logs of user**<br/>
- Fetch user debit logs using userID.
-API:/cmxAPI/firebase/getDebitTxnLogListByUserID
+ Fetch user debit logs using userID.<br/>
+API:/cmxAPI/firebase/getDebitTxnLogListByUserID<br/>
 
 Request Body:
-	Parameter	Data type	Required/Default
-	userId	String	Yes 
+
+	Parameter | Data type | Required/Default
+	--------- | --------- | --------
+	userId | String | Yes
 
 Sample Request Body : {
   "userId": "52QqKTpme1VAMZgsqSycLMhuTpd"
 }
 
 **ii. Credit transaction logs of user**<br/>
- Fetch user credit logs using userID.
-API: /cmxAPI/firebase/getCreditTxnLogListByUserID
+ Fetch user credit logs using userID.<br/>
+API: /cmxAPI/firebase/getCreditTxnLogListByUserID<br/>
 
 Request Body:
-	Parameter	Data type	Required/Default
-	userId	String	Yes 
+
+	Parameter | Data type | Required/Default
+	--------- | --------- | --------
+	userId | String | Yes 
 
 Sample Request Body : {
   "userId": "52QqKTpme1VAMZgsqSycLMhuTpd"
@@ -534,19 +562,21 @@ Sample Request Body : {
 **c. Invites Management**<br/>
 
 **i. Send an Invite**<br/>
- Send a connection request to a registered mFish user.
-API: /cmxAPI/firebase/addInvite
-Request Body: 
-	Parameter	Data Type	Require/Default
-	countryCode	String	Yes
-	sLoginId	String	Yes
-	rLoginId	String	Yes
-	Accepted	String	Yes
-	CreatedDate	String	Yes
+ Send a connection request to a registered mFish user.<br/>
+API: /cmxAPI/firebase/addInvite<br/>
+Request Body:
 
-Note: (sLoginId : Logged in user login ID/email
-rLoginId :LoginID/ email of the user who the invite is supposed to be for. 
-accepted: Status can be a string ‘accepted’ or ‘pending’, default to be sent as pending )
+	Parameter | Data type | Required/Default
+	--------- | --------- | --------
+	countryCode | String | Yes
+	sLoginId | String | Yes
+	rLoginId | String | Yes
+	Accepted | String | Yes
+	CreatedDate | String | Yes
+
+Note: sLoginId : Logged in user login ID/email<br/>
+rLoginId :LoginID/ email of the user who the invite is supposed to be for.<br/>
+accepted: Status can be a string ‘accepted’ or ‘pending’, default to be sent as pending. <br/>
 
 Sample Request Body :
  {
@@ -570,7 +600,9 @@ Sample Request Body :
  Once user accepts a connection request, we can update the status and show connections accordingly.
 API:/cmxAPI/firebase/updateInviteLog
 Request Body:
-	Parameter	Data type	Required/Default
+
+	Parameter | Data type | Required/Default
+	--------- | --------- | --------
 	Accepted	String	Yes 
 	Key	String	Yes
 
