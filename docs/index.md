@@ -24,40 +24,38 @@ Fish and other sea food products are harvested, processed by farmers and then so
 To tackle these problems, a system was developed to check traceability and quality maintenance using Blockchain technology. All the data was shared seamlessly using a Blockchain. A mobile + Web application was designed to capture data from fisherman. 
 In this project we developed and integrated mFish API which serves as the primary gateway to facilitate digital values transfer.
 
-Benefits faced by client after developing and integrating mFish system 
-•	Precise information about seafood product was available to end user.
-•	Exchange of digital currency from one person to another.
-•	Effective tracking of the seafood products in global supply chain.  
-•	Reward mechanism for every user role in terms of tokens.
-•	Through the system the client witnessed a hike in record collection.
+Benefits for client after developing and integrating mFish system <br/>
+- Precise information about seafood product was available to end user.
+- Exchange of digital currency from one person to another.
+- Effective tracking of the seafood products in global supply chain.
+- Reward mechanism for every user role in terms of tokens.
+- Through the system the client witnessed a hike in record collection.
 
-**1.	What is mFish?**
+**1.	What is mFish?**<br/>
 It is an application programming interface, enablesto open up applications’ data and functionality to external third-party developers and business partners. mFish allows services and products to communicate with each other and leverage each other’s data and functionality through a documented interface. Developers don't need to know how an mFishAPI is implemented; they can simply use the mFish APIinterface to communicate with other products and services. 
 
-**1.1	Functionalities of mFish**
+**1.1	Functionalities of mFish**<br/>
 	There are three user roles involved in mFishsystem namely Fisher, Farmer and Trader. Users will be able to avail the features of application by signing into it. For registering new user, along with user details, industry role is a mandatory field. After successful sign up, transfer records are made visible to user as per industry role. All the registration and login details are stored on Firebase database. 
 	User roles like fisher and farmer can add new transfer record while trader can add linked records. Farmers/fisher will have to enter the product information along with their own profile information which was auto populated. In product information, unit id, harvest date, location, species and quantities are captured. To send this product, receiver's mobile number is required. The receiver will be able to check his newly received data with provision of accepting and rejecting the product. 
 	If user rejects any product then all details of such product get erased from the system. For accepted product, certain number of tokens gets transferred to sender's account and the details are then written on public blockchain Stellar with the help of smart contract. All the transactional records are maintained on blockchain. 
 	To utilize the received tokens, another functionality called recharge utility is provided. Because of this function farmers, Trader and fisherman are able to use those received utility tokens for various recharge services like mobile, TV, broadband, electricity and many more utility bill payments. 
  
-**2.	mFishAPI reference**
+**2.	mFishAPI reference**<br/>
 Welcome to the mFish API reference.
 This API serves as the primary gateway to facilitate digital values transfer through mFish.
 Links to access<br/>
-	-[Website](http://52.163.83.160:7771)<br/>
-	-[Firebase Swagger](http://52.163.83.160:7772/API-docs)<br/>
-	-[Blockchain Swagger](http://52.163.83.160:7773/API-docs/#/)<br/>
+	-[TRACE Website](http://52.163.83.160:7771)<br/>
+	-[TRACE Firebase Swagger](http://52.163.83.160:7772/API-docs)<br/>
+	-[TRACE Blockchain Swagger](http://52.163.83.160:7773/API-docs/#/)<br/>
 
-
-
-**2.1	Steps for Signup**
-1.	Signup using this link here- http://52.163.83.160:7771
-2.	User has to Sign up from portal using valid email address and select anyone of the three roles. (Fisher, Farmer, Trader) 
-3.	A verification email will be sent to the registered email address
-4.	Verify the email addressreceived at the registered email address
-5.	Login once to activate your account and add the profile details.
+**2.1	Steps for Signup**<br/>
+- 1. Signup by [clicking here](http://52.163.83.160:7771)
+- 2. User has to Sign up from portal using valid email address and select anyone of the three roles. (Fisher, Farmer, Trader).
+- 3. A verification email will be sent to the registered email address
+- 4.Verify the email addressreceived at the registered email address
+- 5.Login once to activate your account and add the profile details.
  
-**2.2	User Authentication API**
+**2.2	User Authentication API**<br/>
 Once the initial signup and verification process is done, you can use this API to fetch the user details. UserID is the value that will be used to uniquely identify the user and also will be required as a base for all the user related operations. 
 
 API: UserAuthentication
@@ -72,10 +70,10 @@ Sample Request Body:{
   "password": "Abc@123"
 }
 
-**2.3	Transfer Records**
+**2.3. Transfer Records**<br/>
 There are multiple API’s that can be consumed for fetching details of records, below is the list provided with it’s use, API end points and parameters.
 
-**1.	Fetching sent records **
+**1. Fetching sent records**<br/>
 This API will fetch all the records that are sent by user to fisher, farmer, trader along with status of records.
 Endpoint:cmxAPI/firebase/getSentRecordsByUser
 Request Body Parameters:
@@ -86,7 +84,7 @@ Sample Request Body:{
   "userId": "52QqKTpme1VAMZgsqSycLMhuTpd"
 }
 
-**2.	Fetching received records.**
+**2. Fetching received records.**<br/>
 This API will fetch all the records that are received by user from fisher, farmer, trader along with status of records.
 Endpoint:cmxAPI/firebase/getReceivedRecordsByUser
 Request Body Parameters:
@@ -97,32 +95,32 @@ Sample Request Body: {
   "userId": "52QqKTpme1VAMZgsqSycLMhuTpd"
 }
 
-**3.	Fetching country list.**
+**3.Fetching country list.**<br/>
 Used to fetch all the countries with country code.
 Endpoint:cmxAPI/firebase/getCountryList
 Method:GET
 
-**4.	Get Major Fishing Area.**
+**4.Get Major Fishing Area.**<br/>
 Used to fetch the Fishing Area for Fisher, Farmer
 Endpoint: cmxAPI/firebase/getFAOMajorFishingArea
 Method: GET
 
-**5.	Get Fishing gear.**
+**5.Get Fishing gear.**<br/>
 Used to fetch different types of fishing gears available
 Endpoint:cmxAPI/firebase/getFishingGear
 Method:GET
 
-**6.	Get Margin Amount.**
+**6.Get Margin Amount.**<br/>
 Marging amount for merchant transactions
 Endpoint:cmxAPI/firebase/getMarginAmount
 Method: GET
 
-**7.	Sending a record.**
+**7.Sending a record.**<br/>
 A user can send a record to Fisher Farmer or Trader. The request body will change as per the role of the sender.
 Endpoint:cmxAPI/firebase/getReceivedRecordsByUser
 
-Request Body:
-a.	Fisher: 
+Request Body:<br/>
+- a.Fisher: 
 	Parameter	Data type	Required
 	ArrivalPort	String	No
 	DeparturePort	String	No
@@ -209,7 +207,7 @@ e.g.
 	"FishcoinAssets": 1
 }
 
-b.	Farmer:
+- b.Farmer:
 	Parameter	Data type	Required/Default
 	ArrivalPort	String	No
 	DeparturePort	String	No
@@ -239,8 +237,7 @@ b.	Farmer:
 
 Example- {"ArrivalPort":"","DeparturePort":"","DepartureDate":null,"CultureUnitLocation":"EWR","CultureUnitID":"NSK666","ArrivalDate":"2021-11-10T12:16:56.629+05:30","RecdRole":"Farmer","Status":"Log","SentUId":"52QqKTpme1VAMZgsqSycLMhuTpd2","RecdUId":"","TxnStep":0,"TxnHash":"","TxnLinkID":"","IsDeleted":false,"isRead":false,"CreatedDate":"11 10 2021 12:18:13","Species":[{"SpeciesId":"kv7gl","SpeciesName":"Flounder - Olive","SpeciesQty":1,"ParentID":"","LinkID":"","AvailableQty":1,"AdditionalInfo":[{"name":"name1","value":"value1"}],"otherSpec":""}],"additionalInfo":[{"name":"ext","value":"extvalue"}],"UserName":"Remith UAT","SenderName":"Remith UAT","LicenseAndPermitNumber":"ABZ897654","Country":"India","NameOfFarmAndCompany":"Winjit","AddAndLocOfFarm":"Satpur","FishcoinAssets":1}
 
-
-c.	Trader: 
+- c. Trader: 
 	Parameter	Data type	Required/Default
 	ArrivalPort	String	No
 	DeparturePort	String	N0
