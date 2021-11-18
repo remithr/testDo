@@ -1,7 +1,7 @@
 #Contents
-1. WHAT IS MFISH?<br/>
-	- 1.1 FUNCTIONALITIES OF MFISH<br/>
-2. MFISH API REFERENCE<br/>
+1. WHAT IS TRACE?<br/>
+	- 1.1 FUNCTIONALITIES OF TRACE<br/>
+2. TRACE API REFERENCE<br/>
 	- 2.1. STEPS FOR SIGNUP<br/>
 	- 2.2. USER AUTHENTICATION API<br/>
 	- 2.3. TRANSFER RECORDS<br/>
@@ -22,27 +22,27 @@
 **Introduction**
 Fish and other sea food products are harvested, processed by farmers and then sold to local suppliers. They provide these to region suppliers who in turn sells it to the customers. But the industry is often unsustainable, illegal and inefficient.   
 To tackle these problems, a system was developed to check traceability and quality maintenance using Blockchain technology. All the data was shared seamlessly using a Blockchain. A mobile + Web application was designed to capture data from fisherman. 
-In this project we developed and integrated mFish API which serves as the primary gateway to facilitate digital values transfer.
+In this project we developed and integrated TRACE API which serves as the primary gateway to facilitate digital values transfer.
 
-Benefits for client after developing and integrating mFish system <br/>
+Benefits for client after developing and integrating TRACE system <br/>
 - Precise information about seafood product was available to end user.
 - Exchange of digital currency from one person to another.
 - Effective tracking of the seafood products in global supply chain.
 - Reward mechanism for every user role in terms of tokens.
 - Through the system the client witnessed a hike in record collection.
 
-**1.	What is mFish?**<br/>
-It is an application programming interface, enablesto open up applications’ data and functionality to external third-party developers and business partners. mFish allows services and products to communicate with each other and leverage each other’s data and functionality through a documented interface. Developers don't need to know how an mFishAPI is implemented; they can simply use the mFish APIinterface to communicate with other products and services. 
+**1.	What is TRACE?**<br/>
+It is an application programming interface, enablesto open up applications’ data and functionality to external third-party developers and business partners. TRACE allows services and products to communicate with each other and leverage each other’s data and functionality through a documented interface. Developers don't need to know how an TRACE API is implemented; they can simply use the TRACE APIinterface to communicate with other products and services. 
 
-- **1.1	Functionalities of mFish**<br/>
-	There are three user roles involved in mFishsystem namely Fisher, Farmer and Trader. Users will be able to avail the features of application by signing into it. For registering new user, along with user details, industry role is a mandatory field. After successful sign up, transfer records are made visible to user as per industry role. All the registration and login details are stored on Firebase database. 
+- **1.1	Functionalities of TRACE**<br/>
+	There are three user roles involved in TRACE system namely Fisher, Farmer and Trader. Users will be able to avail the features of application by signing into it. For registering new user, along with user details, industry role is a mandatory field. After successful sign up, transfer records are made visible to user as per industry role. All the registration and login details are stored on Firebase database. 
 	User roles like fisher and farmer can add new transfer record while trader can add linked records. Farmers/fisher will have to enter the product information along with their own profile information which was auto populated. In product information, unit id, harvest date, location, species and quantities are captured. To send this product, receiver's mobile number is required. The receiver will be able to check his newly received data with provision of accepting and rejecting the product. 
 	If user rejects any product then all details of such product get erased from the system. For accepted product, certain number of tokens gets transferred to sender's account and the details are then written on public blockchain Stellar with the help of smart contract. All the transactional records are maintained on blockchain. 
 	To utilize the received tokens, another functionality called recharge utility is provided. Because of this function farmers, Trader and fisherman are able to use those received utility tokens for various recharge services like mobile, TV, broadband, electricity and many more utility bill payments. 
  
-**2. mFishAPI reference**<br/>
-Welcome to the mFish API reference.
-This API serves as the primary gateway to facilitate digital values transfer through mFish.
+**2. TRACEAPI reference**<br/>
+Welcome to the TRACE API reference.
+This API serves as the primary gateway to facilitate digital values transfer through TRACE.
 Links to access<br/>
 	-[TRACE Website](http://52.163.83.160:7771)<br/>
 	-[TRACE Firebase Swagger](http://52.163.83.160:7772/API-docs)<br/>
@@ -560,7 +560,7 @@ Sample Request Body : {
 **c. Invites Management**<br/>
 
 **i. Send an Invite**<br/>
- Send a connection request to a registered mFish user.<br/>
+ Send a connection request to a registered TRACE user.<br/>
 API: /cmxAPI/firebase/addInvite<br/>
 Request Body: <br/>
 
