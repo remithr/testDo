@@ -661,7 +661,7 @@ Then below is the blockchain tracking URL-<br/>
 	http://testnet.stellarchain.io/tx/ffa62016e1c20e5042ca59c2979545e20f6fa02de36824286515e12dd5e6abf9<br/>
 
 **3.0 Product developed using Trace protocol**<br/>
-Fish and other sea food products are harvested, processed by farmers and then sold to local suppliers. They provide these to region suppliers who in turn sells it to the customers. But the industry is often unsustainable, illegal and inefficient.
+- Fish and other sea food products are harvested, processed by farmers and then sold to local suppliers. They provide these to region suppliers who in turn sells it to the customers. But the industry is often unsustainable, illegal and inefficient.
 To tackle these problems, a system was developed to check traceability and quality maintenance using Blockchain technology. All the data was shared seamlessly using a Blockchain. A mobile + Web application was designed to capture data from fisherman. 
 In this project we developed and integrated TRACE API which serves as the primary gateway to facilitate digital values transfer.
 Therefore the Grower here is the Fisher, consumer here is the Farmer and Trader stays the same. The voucher tokens in this app is called as Fishcoins. We also integrated the DTone services for airtime topups and other value added services. The purchasing of fishcoin was done using the payment gateway Paypal. The app is live on [web](https://mfish-trace.co/, [Android](https://play.google.com/store/apps/details?id=com.eachmile.fishcoin) and [iOS](https://apps.apple.com/us/app/mfish/id1488081510).
