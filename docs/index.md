@@ -48,7 +48,7 @@ Links to access<br/>
   <p align="center">
   <img src="../signup.png" width="700" height="400" title="hover text">
   </p>
-3. A verification email will be sent to the registered email address
+3. A verification email will be sent to the registered email address<br/>
 4. Verify the email link received at the registered email address
   <p align="center">
   <img src="../verification-link.png" width="700" height="400" title="hover text">
