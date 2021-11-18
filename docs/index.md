@@ -604,8 +604,8 @@ Request Body:<br/>
 
 Parameter | Data type | Required/Default
 --------- | --------- | --------
-Accepted	String	Yes 
-Key	String	Yes
+Accepted | String | Yes 
+Key | String | Yes
 
 Sample Request Body :
   { 
