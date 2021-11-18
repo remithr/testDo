@@ -19,18 +19,6 @@
 			- V. RECEIVED INVITES<br/>
 	- 2.6 FIND YOUR TRANSACTIONS ON TEST NET<br/>
 
-**Introduction**
-Fish and other sea food products are harvested, processed by farmers and then sold to local suppliers. They provide these to region suppliers who in turn sells it to the customers. But the industry is often unsustainable, illegal and inefficient.   
-To tackle these problems, a system was developed to check traceability and quality maintenance using Blockchain technology. All the data was shared seamlessly using a Blockchain. A mobile + Web application was designed to capture data from fisherman. 
-In this project we developed and integrated TRACE API which serves as the primary gateway to facilitate digital values transfer.
-
-Benefits for client after developing and integrating TRACE system <br/>
-- Precise information about seafood product was available to end user.
-- Exchange of digital currency from one person to another.
-- Effective tracking of the seafood products in global supply chain.
-- Reward mechanism for every user role in terms of tokens.
-- Through the system the client witnessed a hike in record collection.
-
 **1.	What is TRACE?**<br/>
 It is an application programming interface, enablesto open up applications’ data and functionality to external third-party developers and business partners. TRACE allows services and products to communicate with each other and leverage each other’s data and functionality through a documented interface. Developers don't need to know how an TRACE API is implemented; they can simply use the TRACE APIinterface to communicate with other products and services. 
 
@@ -670,3 +658,16 @@ Example:<br/>
 	hash= ffa62016e1c20e5042ca59c2979545e20f6fa02de36824286515e12dd5e6abf9<br/>
 Then below is the blockchain tracking URL-<br/>
 	http://testnet.stellarchain.io/tx/ffa62016e1c20e5042ca59c2979545e20f6fa02de36824286515e12dd5e6abf9<br/>
+
+**Product developed using Trace protocol**
+Fish and other sea food products are harvested, processed by farmers and then sold to local suppliers. They provide these to region suppliers who in turn sells it to the customers. But the industry is often unsustainable, illegal and inefficient.
+To tackle these problems, a system was developed to check traceability and quality maintenance using Blockchain technology. All the data was shared seamlessly using a Blockchain. A mobile + Web application was designed to capture data from fisherman. 
+In this project we developed and integrated TRACE API which serves as the primary gateway to facilitate digital values transfer.
+Therefore the Grower here is the Fisher, consumer here is the Farmer and Trader stays the same. The voucher tokens in this app is called as Fishcoins. We also integrated the DTone services for airtime topups and other value added services. The purchasing of fishcoin was done using the payment gateway Paypal. The app is live on [web](https://mfish-trace.co/, [Android](https://play.google.com/store/apps/details?id=com.eachmile.fishcoin) and [iOS](https://apps.apple.com/us/app/mfish/id1488081510).
+
+Benefits for client after developing and integrating TRACE system <br/>
+- Precise information about seafood product was available to end user.
+- Exchange of digital currency from one person to another.
+- Effective tracking of the seafood products in global supply chain.
+- Reward mechanism for every user role in terms of tokens.
+- Through the system the client witnessed a hike in record collection.
