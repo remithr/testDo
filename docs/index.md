@@ -18,6 +18,7 @@
 			- IV. FETCH SENT INVITES<br/>
 			- V. RECEIVED INVITES<br/>
 	- 2.6 FIND YOUR TRANSACTIONS ON TEST NET<br/>
+  3. Product developed using Trace protocol<br/>
 
 **1.	What is TRACE?**<br/>
 It is an application programming interface, enablesto open up applications’ data and functionality to external third-party developers and business partners. TRACE allows services and products to communicate with each other and leverage each other’s data and functionality through a documented interface. Developers don't need to know how an TRACE API is implemented; they can simply use the TRACE APIinterface to communicate with other products and services. 
