@@ -57,16 +57,16 @@ Links to access<br/>
 1. Signup by [clicking here](http://52.163.83.160:7771)
 2. User has to Sign up from portal using valid email address and select anyone of the three roles. (Grower, Consumer, Trader).
   <p align="center">
-  <img src="../signup.png" width="500" height="400" title="hover text">
+  <img src="../signup.png" width="700" height="400" title="hover text">
   </p>
 3. A verification email will be sent to the registered email address
 4. Verify the email link received at the registered email address
   <p align="center">
-  <img src="../verification-link.png" width="400" height="400" title="hover text">
+  <img src="../verification-link.png" width="700" height="400" title="hover text">
   </p>
 5. Login once to activate your account and add the profile details.
  <p align="center">
-  <img src="../signin.png" width="650" height="400" title="hover text">
+  <img src="../signin.png" width="700" height="400" title="hover text">
   </p>
 
 - **2.2	User Authentication API**<br/>
