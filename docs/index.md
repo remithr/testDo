@@ -35,7 +35,13 @@ Benefits for client after developing and integrating TRACE system <br/>
 It is an application programming interface, enablesto open up applications’ data and functionality to external third-party developers and business partners. TRACE allows services and products to communicate with each other and leverage each other’s data and functionality through a documented interface. Developers don't need to know how an TRACE API is implemented; they can simply use the TRACE APIinterface to communicate with other products and services. 
 
 - **1.1	Functionalities of TRACE**<br/>
-	There are three user roles involved in TRACE system namely Fisher, Farmer and Trader. Users will be able to avail the features of application by signing into it. For registering new user, along with user details, industry role is a mandatory field. After successful sign up, transfer records are made visible to user as per industry role. All the registration and login details are stored on Firebase database. 
+	There are three user roles involved in TRACE system namely Grower, Consumer, Trader. Users will be able to avail the features of application by signing into it. For registering new user, along with user details, industry role is a mandatory field. After successful sign up, transfer records are made visible to user as per industry role. All the registration and login details are stored on Firebase database.
+
+  <p align="center">
+  <img src="./Trace.png" width="350" title="hover text">
+  <img src="../Trace.png" width="350" alt="accessibility text">
+  </p>
+
 	User roles like fisher and farmer can add new transfer record while trader can add linked records. Farmers/fisher will have to enter the product information along with their own profile information which was auto populated. In product information, unit id, harvest date, location, species and quantities are captured. To send this product, receiver's mobile number is required. The receiver will be able to check his newly received data with provision of accepting and rejecting the product. 
 	If user rejects any product then all details of such product get erased from the system. For accepted product, certain number of tokens gets transferred to sender's account and the details are then written on public blockchain Stellar with the help of smart contract. All the transactional records are maintained on blockchain. 
 	To utilize the received tokens, another functionality called recharge utility is provided. Because of this function farmers, Trader and fisherman are able to use those received utility tokens for various recharge services like mobile, TV, broadband, electricity and many more utility bill payments. 
