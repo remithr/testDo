@@ -37,9 +37,8 @@ It is an application programming interface, enablesto open up applications’ da
 - **1.1	Functionalities of TRACE**<br/>
 	There are three user roles involved in TRACE system namely Grower, Consumer, Trader. Users will be able to avail the features of application by signing into it. For registering new user, along with user details, industry role is a mandatory field. After successful sign up, transfer records are made visible to user as per industry role. All the registration and login details are stored on Firebase database.
 
-  <p align="center">
+  <p align="center" style="border-radius: 25px;">
   <img src="./Trace.png" width="350" title="hover text">
-  <img src="../Trace.png" width="350" alt="accessibility text">
   </p>
 
 	User roles like fisher and farmer can add new transfer record while trader can add linked records. Farmers/fisher will have to enter the product information along with their own profile information which was auto populated. In product information, unit id, harvest date, location, species and quantities are captured. To send this product, receiver's mobile number is required. The receiver will be able to check his newly received data with provision of accepting and rejecting the product. 
