@@ -660,7 +660,7 @@ Example:<br/>
 Then below is the blockchain tracking URL-<br/>
 	http://testnet.stellarchain.io/tx/ffa62016e1c20e5042ca59c2979545e20f6fa02de36824286515e12dd5e6abf9<br/>
 
-**Product developed using Trace protocol**
+**3.0 Product developed using Trace protocol**
 Fish and other sea food products are harvested, processed by farmers and then sold to local suppliers. They provide these to region suppliers who in turn sells it to the customers. But the industry is often unsustainable, illegal and inefficient.
 To tackle these problems, a system was developed to check traceability and quality maintenance using Blockchain technology. All the data was shared seamlessly using a Blockchain. A mobile + Web application was designed to capture data from fisherman. 
 In this project we developed and integrated TRACE API which serves as the primary gateway to facilitate digital values transfer.
