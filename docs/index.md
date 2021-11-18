@@ -37,15 +37,15 @@ It is an application programming interface, enablesto open up applications’ da
 - **1.1	Functionalities of TRACE**<br/>
 	There are three user roles involved in TRACE system namely Grower, Consumer, Trader. Users will be able to avail the features of application by signing into it. For registering new user, along with user details, industry role is a mandatory field. After successful sign up, transfer records are made visible to user as per industry role. All the registration and login details are stored on Firebase database.
 
-  <p align="center" style="border-radius: 25px;">
+  <p align="center">
   <img src="../Trace.png" width="350" title="hover text">
   </p>
 
-	User roles like fisher and farmer can add new transfer record while trader can add linked records. Farmers/fisher will have to enter the product information along with their own profile information which was auto populated. In product information, unit id, harvest date, location, species and quantities are captured. To send this product, receiver's mobile number is required. The receiver will be able to check his newly received data with provision of accepting and rejecting the product. 
+	User roles like grower and consumer can add new transfer record while trader can add linked records. Grower/Consumer will have to enter the product information along with their own profile information which was auto populated. In product information, unit id, harvest date, location, species and quantities are captured. To send this product, receiver's mobile number is required. The receiver will be able to check his newly received data with provision of accepting and rejecting the product. 
 	If user rejects any product then all details of such product get erased from the system. For accepted product, certain number of tokens gets transferred to sender's account and the details are then written on public blockchain Stellar with the help of smart contract. All the transactional records are maintained on blockchain. 
-	To utilize the received tokens, another functionality called recharge utility is provided. Because of this function farmers, Trader and fisherman are able to use those received utility tokens for various recharge services like mobile, TV, broadband, electricity and many more utility bill payments. 
+	To utilize the received tokens, another functionality called recharge utility is provided. Because of this function farmers, Trader and consumers are able to use those received utility tokens for various recharge services like mobile, TV, broadband, electricity and many more utility bill payments. 
  
-**2. TRACEAPI reference**<br/>
+**2. TRACE API reference**<br/>
 Welcome to the TRACE API reference.
 This API serves as the primary gateway to facilitate digital values transfer through TRACE.
 Links to access<br/>
@@ -55,11 +55,20 @@ Links to access<br/>
 
 - **2.1	Steps for Signup**<br/>
 1. Signup by [clicking here](http://52.163.83.160:7771)
-2. User has to Sign up from portal using valid email address and select anyone of the three roles. (Fisher, Farmer, Trader).
+2. User has to Sign up from portal using valid email address and select anyone of the three roles. (Grower, Consumer, Trader).
+  <p align="center">
+  <img src="../signup.png" width="350" title="hover text">
+  </p>
 3. A verification email will be sent to the registered email address
-4. Verify the email addressreceived at the registered email address
+4. Verify the email link received at the registered email address
+  <p align="center">
+  <img src="../verification-link.png" width="350" title="hover text">
+  </p>
 5. Login once to activate your account and add the profile details.
- 
+ <p align="center">
+  <img src="../signin.png" width="350" title="hover text">
+  </p>
+
 - **2.2	User Authentication API**<br/>
 Once the initial signup and verification process is done, you can use this API to fetch the user details. UserID is the value that will be used to uniquely identify the user and also will be required as a base for all the user related operations. 
 
