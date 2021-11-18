@@ -139,7 +139,7 @@ A user can send a record to Fisher Farmer or Trader. The request body will chang
 Endpoint:cmxAPI/firebase/getReceivedRecordsByUser<br/>
 
 Request Body:<br/>
-- a.Fisher:<br/>
+- a. Grower:<br/>
 
 	Parameter | Data type | Required
 	--------- | --------- | --------
@@ -228,7 +228,7 @@ Example.
 	"FishcoinAssets": 1
 }
 
-- b.Farmer:
+- b. Consumer:
 	Parameter | Data type | Required/Default
 	--------- | --------- | --------
 	ArrivalPort | String | No
@@ -417,7 +417,7 @@ Sample Request Body :      {
   "key": "-MmvS-YlNqUQV76YSNOV"
 }
 
-**2.4 Transfer Fishcoin**<br/>
+**2.4 Transfer Voucher Tokens**<br/>
 - **a. Get Wallet balance**<br/>
 To fetch Stellar wallet balance<br/>
 API: /AccountDetails<br/>
@@ -431,7 +431,7 @@ Sample Request Body: {
   "accountId":"GDC33CQDL7U3YI4MI2MFLRM7JP62TXDKBIWI4UXH2H27BOCAMJZSZZN3" 
 }
 
-- **b. Transfer fishcoin**<br/>
+- **b. Transfer Voucher Tokens**<br/>
 This API is used to transfer Fish assets from one account to another<br/>
 API: /transferFishAssets<br/>
 Request Body:<br/>
@@ -457,7 +457,7 @@ Sample Request Body:
   "amount": 0.1
 }
 
-**c.Transfer Fish Assets to Merchant Account**<br/>
+**c.Transfer Voucher Token Assets to Merchant Account**<br/>
  This API is used to transfer Fish assets to merchant account from user account<br/>
 API:/transferFishAssetsToMerchant<br/>
 Request Body : <br/>
@@ -481,8 +481,8 @@ Sample Request Body:
   "burnAmount": "0"
 }
 
-**d.Transfer Fish Assets from merchant Account**<br/>
- This API is used to transfer Fish assets from merchant account to another <br/>
+**d.Transfer Voucher Token Assets from merchant Account**<br/>
+ This API is used to transfer voucher token assets from merchant account to another <br/>
 API:/transferFishAssetsFromMerchant <br/>
 Request Body: <br/>
 
