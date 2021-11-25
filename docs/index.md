@@ -422,7 +422,7 @@ Sample Request Body: {
 
 - **b. Transfer Voucher Tokens**<br/>
 This API is used to transfer Fish assets from one account to another<br/>
-API: /transferFishAssets<br/>
+API: /transferVoucherTokenAssets<br/>
 Request Body:<br/>
 
 	Parameter | Data type | Required/Default
@@ -448,7 +448,7 @@ Sample Request Body:
 
 **c.Transfer Voucher Token Assets to Merchant Account**<br/>
  This API is used to transfer Fish assets to merchant account from user account<br/>
-API:/transferFishAssetsToMerchant<br/>
+API:/transferVoucherTokenAssetsToMerchant<br/>
 Request Body : <br/>
 
 Parameter | Data type | Required/Default
@@ -472,7 +472,7 @@ Sample Request Body:
 
 **d.Transfer Voucher Token Assets from merchant Account**<br/>
  This API is used to transfer voucher token assets from merchant account to another <br/>
-API:/transferFishAssetsFromMerchant <br/>
+API:/transferVoucherTokenAssetsFromMerchant <br/>
 Request Body: <br/>
 
 Parameter | Data type | Required/Default
