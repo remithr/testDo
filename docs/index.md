@@ -486,7 +486,7 @@ feesAmount | Float | Yes
 burnAmount | Integer | Yes
 developerWalletID | String | No
 developerWalletSecretKey | String | No
-developerUserID String | No
+developerUserID | String | No
 
 
 Sample Request Body: 
