@@ -508,7 +508,7 @@ Sample Request Body:
   "developerUserID":"prdCzwt9mBSBadXT6VfMZuqAVip2"
 }
 
-**d.Transfer Voucher Token Assets from merchant Account**<br/>
+**e.Transfer Voucher Token Assets from merchant Account**<br/>
  This API is used to transfer voucher token assets from merchant account to another <br/>
 API:/transferVoucherTokenAssetsFromMerchant <br/>
 Request Body: <br/>
@@ -527,7 +527,7 @@ Sample Request Body: {
   "amount": "5"
 }
 
-**e.Write Data on Blockchain**<br/>
+**f.Write Data on Blockchain**<br/>
  This API is used to write IPFS hash on the stellar blockchain, it returns the Stellar Transaction Hash<br/>
 API: /writeDataOnBlockchain<br/>
 Request Body:<br/>
