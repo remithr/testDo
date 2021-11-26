@@ -470,6 +470,38 @@ Sample Request Body:
   "burnAmount": "0"
 }
 
+**d.Transfer Voucher Token Assets to Merchant and Developer Account**<br/>
+ This API is used to transfer Fish assets to merchant and developer account from user account<br/>
+ For the feature developed by the developer, the developer would be getting a 50% cut of merchant fees.
+API:/transferVoucherTokenAssetsToMerchantAndDeveloper<br/>
+Request Body : <br/>
+
+Parameter | Data type | Required/Default
+--------- | --------- | --------
+srcAcct | String | Yes
+srcSeed | String | Yes
+srcUserID | String | Yes
+Amount | Float | Yes
+feesAmount | Float | Yes
+burnAmount | Integer | Yes
+developerWalletID | String | No
+developerWalletSecretKey | String | No
+developerUserID String | No
+
+
+Sample Request Body: 
+{
+  "srcAcct":"GATSU64WOJDOGUMLKZP5FUJL32QM6WX5PLH4YRKK3ROWMCFPZ7RCKPI2",
+  "srcSeed":"U2FsdGVkX1+8FNQyvOaMCZvl2R1raM6/SHLfTiUvwWeiOsV7NqRe8i3C6Joei1DTrK7DcbALVjk3d90FT+YMwUYFp2bEmyrC9Gf7SAmOxXM=",
+  "srcUserID": "Vkb6O6ZfLyQS1cLRbcnXJc4QnMp1",
+  "amount": "0.005000000000000001",
+  "feesAmount": "0.005000000000000001",
+  "burnAmount": "0",
+"developerWalletID":"GAL4XW2WEFWM2WQYQASQBO5LOZPSLNBSSVWI5GYB2ZUZKHVAUFVKVQ22", 
+  "developerWalletSecretKey":"U2FsdGVkX1+fZQy9ogomAWZiEh2a6sMem0ZLnM+jvbisvOQTg4MtXhyxFRHBi33sha5PsAQUugBjeumseAhjMiujMTxodWki19ZzHQw/SOc=", 
+  "developerUserID":"prdCzwt9mBSBadXT6VfMZuqAVip2"
+}
+
 **d.Transfer Voucher Token Assets from merchant Account**<br/>
  This API is used to transfer voucher token assets from merchant account to another <br/>
 API:/transferVoucherTokenAssetsFromMerchant <br/>
