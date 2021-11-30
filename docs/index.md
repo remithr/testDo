@@ -476,6 +476,7 @@ Sample Request Body:
  developerWalletID : The Public key assigned on Account creation.<br>
  developerWalletSecretKey: The secret key field.<br>
  developerUserID: User ID of developer.<br>
+ You can get the above values from User Authentication API(2.2) above.<br>
 
 
 
