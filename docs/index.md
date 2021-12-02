@@ -18,7 +18,7 @@
 			- III. REJECT AN INVITE<br/>
 			- IV. FETCH SENT INVITES<br/>
 			- V. RECEIVED INVITES<br/>
-	- 2.6 FIND YOUR TRANSACTIONS ON TEST NET<br/>
+	- 3.5 FIND YOUR TRANSACTIONS ON TEST NET<br/>
 
 
 **1.	What is TRACE?**<br/>
@@ -37,7 +37,7 @@ It is an application programming interface, enablesto open up applications’ da
  
 
 
-**2.0 Transfer Voucher Tokens**<br/>
+**1.2 Transfer Voucher Tokens**<br/>
 - **a. Get Wallet balance**<br/>
 To fetch Stellar wallet balance<br/>
 API: /AccountDetails<br/>
@@ -187,7 +187,7 @@ Sample Request Body: {
 }
 
 
-**3.0 Product developed using Trace protocol**<br/>
+**2.0 Product developed using Trace protocol**<br/>
 - Fish and other sea food products are harvested, processed by farmers and then sold to local suppliers. They provide these to region suppliers who in turn sells it to the customers. But the industry is often unsustainable, illegal and inefficient.
 To tackle these problems, a system was developed to check traceability and quality maintenance using Blockchain technology. All the data was shared seamlessly using a Blockchain. A mobile + Web application was designed to capture data from fisherman. 
 In this project we developed and integrated TRACE API which serves as the primary gateway to facilitate digital values transfer.
@@ -200,7 +200,7 @@ Benefits for client after developing and integrating TRACE system <br/>
 - Reward mechanism for every user role in terms of tokens.
 - Through the system the client witnessed a hike in record collection.
 
-- **3.1	Steps for Signup**<br/>
+- **2.1	Steps for Signup**<br/>
 1. Signup by [clicking here](http://52.163.83.160:7771)
 2. User has to Sign up from portal using valid email address and select anyone of the three roles. (Grower, Consumer, Trader).
   <p align="center">
@@ -216,7 +216,7 @@ Benefits for client after developing and integrating TRACE system <br/>
   <img src="../signin.png" width="700" height="400" title="hover text">
   </p>
   
-  **3.2. TRACE API reference**<br/>
+  **2.2. TRACE API reference**<br/>
 Welcome to the TRACE API reference.
 This API serves as the primary gateway to facilitate digital values transfer through TRACE.
 Links to access<br/>
