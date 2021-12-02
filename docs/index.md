@@ -1,12 +1,13 @@
 #Contents
 1. WHAT IS TRACE?<br/>
 	- 1.1 FUNCTIONALITIES OF TRACE<br/>
-2. TRACE API REFERENCE<br/>
-	- 2.1. STEPS FOR SIGNUP<br/>
-	- 2.2. USER AUTHENTICATION API<br/>
-	- 2.3. TRANSFER RECORDS<br/>
-	- 2.4. TRANSFER VOUCHER TOKENS<br/>
-	- 2.5. SETTINGS<br/>
+	- 1.2 TRANSFER VOUCHER TOKENS<br/>
+2. Product developed using Trace protocol - “MFISH” <br/>
+3. TRACE API REFERENCE<br/>
+	- 3.1. STEPS FOR SIGNUP<br/>
+	- 3.2. USER AUTHENTICATION API<br/>
+	- 3.3. TRANSFER RECORDS<br/>
+	- 3.4. SETTINGS<br/>
 		- A. PROFILE INFORMATION<br/>
 		- B. TRANSACTION LOG<br/>
 			- I. DEBIT TRANSACTION LOGS OF USER<br/>
@@ -18,7 +19,7 @@
 			- IV. FETCH SENT INVITES<br/>
 			- V. RECEIVED INVITES<br/>
 	- 2.6 FIND YOUR TRANSACTIONS ON TEST NET<br/>
-  3. Product developed using Trace protocol<br/>
+
 
 **1.	What is TRACE?**<br/>
 It is an application programming interface, enablesto open up applications’ data and functionality to external third-party developers and business partners. TRACE allows services and products to communicate with each other and leverage each other’s data and functionality through a documented interface. Developers don't need to know how an TRACE API is implemented; they can simply use the TRACE APIinterface to communicate with other products and services. 
