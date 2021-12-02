@@ -706,7 +706,7 @@ Sample Request Body: {
   "userId": "52QqKTpme1VAMZgsqSycLMhuTpd"
 }
 
-**2.6 Find your transactions on test net.**<br/>
+** Find your transactions on test net.**<br/>
 - a.Fetch the transaction hash from the transaction and go to Stellar test net URL to find details.<br/>
 	http://testnet.stellarchain.io/tx/txn_hash_here<br/>
 Example:<br/>
