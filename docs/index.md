@@ -220,6 +220,55 @@ Benefits for client after developing and integrating TRACE system <br/>
 
 	- 2.1 mFish reference
  
+- **2.1.1	User Authentication API**<br/>
+Once the initial signup and verification process is done, you can use this API to fetch the user details. UserID is the value that will be used to uniquely identify the user and also will be required as a base for all the user related operations. 
+
+API: UserAuthentication<br/>
+Endpoint:cmxAPI/firebase/userAuthentication<br/>
+Request Body Parameters:<br/>
+
+Parameter | Data type | Required
+----------|-----------|---------
+email     |   String  |   Yes
+password  |   String  |   Yes
+
+Sample Request Body:{
+  "email": "rem@yopmail.com",
+  "password": "Abc@123"
+}
+
+- **2.1.2 Transfer Records**<br/>
+There are multiple API’s that can be consumed for fetching details of records, below is the list provided with it’s use, API end points and parameters.
+	- **1. Fetching sent records**<br/>
+This API will fetch all the records that are sent by user to fisher, farmer, trader along with status of records.<br/>
+Endpoint:cmxAPI/firebase/getSentRecordsByUser<br/>
+Request Body Parameters:<br/>
+
+	Parameter | Data type | Required
+	--------- |-----------|---------
+	userId    |  String   | Yes
+
+Sample Request Body:{
+  "userId": "52QqKTpme1VAMZgsqSycLMhuTpd"
+}
+
+- **2. Fetching received records.**<br/>
+This API will fetch all the records that are received by user from fisher, farmer, trader along with status of records.<br/>
+Endpoint:cmxAPI/firebase/getReceivedRecordsByUser<br/>
+Request Body Parameters:<br/>
+
+	Parameter | Data type | Required
+	--------- |-----------|---------
+	userId    |  String   | Yes
+
+Sample Request Body: {
+  "userId": "52QqKTpme1VAMZgsqSycLMhuTpd"
+}
+
+- **3 Fetching country list.**<br/>
+Used to fetch all the countries with country code.<br/>
+Endpoint:cmxAPI/firebase/getCountryList<br/>
+Method:GET<br/>
 
 - **4 Get Major Fishing Area.**<br/>
 Used to fetch the Fishing Area for Fisher, Farmer<br/>
