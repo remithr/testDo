@@ -3,11 +3,11 @@
 	- 1.1 FUNCTIONALITIES OF TRACE<br/>
 	- 1.2 TRANSFER VOUCHER TOKENS<br/>
 2. Product developed using Trace protocol - “MFISH” <br/>
-3. TRACE API REFERENCE<br/>
-	- 3.1. STEPS FOR SIGNUP<br/>
-	- 3.2. USER AUTHENTICATION API<br/>
-	- 3.3. TRANSFER RECORDS<br/>
-	- 3.4. SETTINGS<br/>
+	- 2.1. TRACE API REFERENCE<br/>
+		- 2.1.1 STEPS FOR SIGNUP<br/>
+		- 2.1.2 USER AUTHENTICATION API<br/>
+		- 2.1.3 TRANSFER RECORDS<br/>
+		- 2.1.4 SETTINGS<br/>
 		- A. PROFILE INFORMATION<br/>
 		- B. TRANSACTION LOG<br/>
 			- I. DEBIT TRANSACTION LOGS OF USER<br/>
@@ -18,7 +18,7 @@
 			- III. REJECT AN INVITE<br/>
 			- IV. FETCH SENT INVITES<br/>
 			- V. RECEIVED INVITES<br/>
-	- 3.5 FIND YOUR TRANSACTIONS ON TEST NET<br/>
+	- 2.2 FIND YOUR TRANSACTIONS ON TEST NET<br/>
 
 
 **1.	What is TRACE?**<br/>
@@ -200,7 +200,16 @@ Benefits for client after developing and integrating TRACE system <br/>
 - Reward mechanism for every user role in terms of tokens.
 - Through the system the client witnessed a hike in record collection.
 
-- **2.1	Steps for Signup**<br/>
+  
+  **2.1 TRACE API reference**<br/>
+Welcome to the TRACE API reference.
+This API serves as the primary gateway to facilitate digital values transfer through TRACE.
+Links to access<br/>
+	-[TRACE Website](http://52.163.83.160:7771)<br/>
+	-[TRACE Firebase Swagger](http://52.163.83.160:7772/API-docs)<br/>
+	-[TRACE Blockchain Swagger](http://52.163.83.160:7773/API-docs/#/)<br/>
+	
+- **2.1.2	Steps for Signup**<br/>
 1. Signup by [clicking here](http://52.163.83.160:7771)
 2. User has to Sign up from portal using valid email address and select anyone of the three roles. (Grower, Consumer, Trader).
   <p align="center">
@@ -215,16 +224,9 @@ Benefits for client after developing and integrating TRACE system <br/>
  <p align="center">
   <img src="../signin.png" width="700" height="400" title="hover text">
   </p>
-  
-  **2.2. TRACE API reference**<br/>
-Welcome to the TRACE API reference.
-This API serves as the primary gateway to facilitate digital values transfer through TRACE.
-Links to access<br/>
-	-[TRACE Website](http://52.163.83.160:7771)<br/>
-	-[TRACE Firebase Swagger](http://52.163.83.160:7772/API-docs)<br/>
-	-[TRACE Blockchain Swagger](http://52.163.83.160:7773/API-docs/#/)<br/>
 
-- **1.	User Authentication API**<br/>
+
+- **2.1.2	User Authentication API**<br/>
 Once the initial signup and verification process is done, you can use this API to fetch the user details. UserID is the value that will be used to uniquely identify the user and also will be required as a base for all the user related operations. 
 
 API: UserAuthentication<br/>
@@ -241,7 +243,7 @@ Sample Request Body:{
   "password": "Abc@123"
 }
 
-- **2. Transfer Records**<br/>
+- **2.1.3 Transfer Records**<br/>
 There are multiple API’s that can be consumed for fetching details of records, below is the list provided with it’s use, API end points and parameters.
 	- **1. Fetching sent records**<br/>
 This API will fetch all the records that are sent by user to fisher, farmer, trader along with status of records.<br/>
@@ -256,7 +258,7 @@ Sample Request Body:{
   "userId": "52QqKTpme1VAMZgsqSycLMhuTpd"
 }
 
-- **3. Fetching received records.**<br/>
+- **2. Fetching received records.**<br/>
 This API will fetch all the records that are received by user from fisher, farmer, trader along with status of records.<br/>
 Endpoint:cmxAPI/firebase/getReceivedRecordsByUser<br/>
 Request Body Parameters:<br/>
@@ -269,27 +271,27 @@ Sample Request Body: {
   "userId": "52QqKTpme1VAMZgsqSycLMhuTpd"
 }
 
-- **4. Fetching country list.**<br/>
+- **3 Fetching country list.**<br/>
 Used to fetch all the countries with country code.<br/>
 Endpoint:cmxAPI/firebase/getCountryList<br/>
 Method:GET<br/>
 
-- **5. Get Major Fishing Area.**<br/>
+- **4 Get Major Fishing Area.**<br/>
 Used to fetch the Fishing Area for Fisher, Farmer<br/>
 Endpoint: cmxAPI/firebase/getFAOMajorFishingArea<br/>
 Method: GET<br/>
 
-- **6. Get Fishing gear.**<br/>
+- **5 Get Fishing gear.**<br/>
 Used to fetch different types of fishing gears available<br/>
 Endpoint:cmxAPI/firebase/getFishingGear<br/>
 Method:GET<br/>
 
-- **7. Get Margin Amount.**<br/>
+- **6 Get Margin Amount.**<br/>
 Marging amount for merchant transactions<br/>
 Endpoint:cmxAPI/firebase/getMarginAmount<br/>
 Method: GET<br/>
 
-- **8. Sending a record.**<br/>
+- **7. Sending a record.**<br/>
 A user can send a record to Fisher Farmer or Trader. The request body will change as per the role of the sender.<br/>
 Endpoint:cmxAPI/firebase/getReceivedRecordsByUser<br/>
 
@@ -470,7 +472,7 @@ Example:
 	AdditionalInfo | Object | Yes
 	otherSpec | String | No
 	
-**9. Sending a linked record**<br/>
+**8. Sending a linked record**<br/>
   A user can send his received records to a fisher, farmer or trader.<br/>
 API:cmxAPI/firebase/addTxnDetails<br/>
 Request Body: <br/> 
@@ -559,7 +561,7 @@ Sample Request Body : {
   "ReceiverName": "Fisher UAT"
 }
 
-**10. Fetch record details**<br/>
+**9. Fetch record details**<br/>
   Get transaction details using transaction key<br/>
 API:cmxAPI/firebase/getTxnbyKey<br/>
 Request Body:<br/>
@@ -572,7 +574,7 @@ Sample Request Body :      {
   "key": "-MmvS-YlNqUQV76YSNOV"
 }
 
-** Settings**<br/>
+** 2.1.4 Settings**<br/>
 
 **a. Profile information**<br/>
 Fetch user details using userID.<br/>
@@ -707,7 +709,7 @@ Sample Request Body: {
   "userId": "52QqKTpme1VAMZgsqSycLMhuTpd"
 }
 
-** Find your transactions on test net.**<br/>
+**2.2 Find your transactions on test net.**<br/>
 - a.Fetch the transaction hash from the transaction and go to Stellar test net URL to find details.<br/>
 	http://testnet.stellarchain.io/tx/txn_hash_here<br/>
 Example:<br/>
