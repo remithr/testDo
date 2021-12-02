@@ -52,7 +52,7 @@ Sample Request Body: {
 }
 
 - **b. Transfer Voucher Tokens**<br/>
-This API is used to transfer Fish assets from one account to another<br/>
+This API is used to transfer Voucher token assets from one account to another<br/>
 API: /transferVoucherTokenAssets<br/>
 Request Body:<br/>
 
@@ -78,7 +78,7 @@ Sample Request Body:
 }
 
 **c.Transfer Voucher Token Assets to Merchant Account**<br/>
- This API is used to transfer Fish assets to merchant account from user account<br/>
+ This API is used to transfer Voucher token assets to merchant account from user account<br/>
 API:/transferVoucherTokenAssetsToMerchant<br/>
 Request Body : <br/>
 
@@ -102,7 +102,7 @@ Sample Request Body:
 }
 
 **d.Transfer Voucher Token Assets to Merchant and Developer Account**<br/>
- This API is used to transfer Fish assets to merchant and developer account from user account<br/>
+ This API is used to transfer Voucher token assets to merchant and developer account from user account<br/>
  For the feature developed by the developer, the developer would be getting a 50% cut of merchant fees. The developer can get the details required for the fee transfer through the account details API. The below mentioned fields would be required for successful transfer of fees.<br>
  developerWalletID : The Public key assigned on Account creation.<br>
  developerWalletSecretKey: The secret key field.<br>
