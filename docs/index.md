@@ -25,24 +25,43 @@
 	
 
 
-**1.	WHY DO WE NEED TRACE **<br/>
+**1.	WHY DO WE NEED TRACE & WHAT IS IT?**<br/>
+
+-**1.1	Why Do We Need Trace?**<br/>
         Traceability is the ability to trace back to where a product came from, and, if applicable, where the product’s ingredients/components were sourced from. It is important to do so to ensure that the products we use and consume are safe, authentic and have been produced in a legal, sustainable, and responsible manner. In the case of seafood supply chains, traceability is important because more than one third of global production is said to be illegal, unreported or unregulated (IUU), up to 80% of certain species groups can be mislabelled, the seafood may contain natural toxins, man-made contaminants, or be unsafe to consume due poor cold chain and bacterial contamination. In addition, most fish stocks are at levels of maximum exploitation or are overfished, and modern day slavery can be prevalent.  These are major risks for companies and for the future or the industry, as well as risks for governments and our food security.
 Although traceability can be achieved through pencil and paper or simple spreadsheets, records can be duplicated or falsified and thus these methods do not build trust within a supply chain. Specific traceability systems exist but they are often built for intra-company, one-up one-down traceability, they are proprietary, and they can be difficult to use and expensive. Further, with upwards of 90% of global seafood production and the industry’s workforce based out of and in developing nations, these systems are often not accessible to those at the first mile of seafood supply chains. Even if a fisher or fish farmer could pay and use a system, there is no clear return on investment, and so we lack traceability. In fact a study commissioned by Standard Chartered Bank found that only 6% of firms have visibility through their supply chains. Why is that concern and why would a bank commission such a study? Well without traceability, the risk for finance and insurance is too high, and we are stuck in a world where, for the most part, we are unable to identify, verify, and reward legal and responsible production for the vast majority of our produce like seafood. 
 That is why Eachmile Technologies designed and built the Trace Protocol. A protocol that in the case of seafood allows developers to build or integrate into decentralised applications a token called Fishcoin. The token can be used as an incentive for the sharing and recording of data in an immutable way that builds trust and provides traceability. It can be integrated into any  blockchain operating system, allows for the market to work out the value of the data, and provides a mechanism by which the market can reward the fishers, farmers and other supply chain actors in developing nations when they redeem the tokens for mobile air-time top ups and other services in the future.
 
 
+**1.2 What is TRACE?**<br/>
+TRACE is an Application Programming Interface (API) that facilitates shared functionality and data transfer between applications via a documented interface.  Specifically the transfer of traceability data between stakeholders in a supply chain such as producers and intermediaries such as aggregators, processors, wholesalers, through to retailers. 
 
-- **1.1	Functionalities of TRACE**<br/>
-	There are three user roles involved in TRACE system namely Grower, Consumer and Trader. Users will be able to avail the features of application by signing into it. For registering new user, along with user details, industry role is a mandatory field. After successful sign up, transfer records are made visible to user as per industry role. All the registration and login details are stored on Firebase database.  
+- **1.2.1 Functionalities of TRACE**<br/>
+There are two main user roles in the TRACE system - the producer and the trader. In the case of the seafood industry there are two main producers -  a fisher or a fish farmer. When registering and signing up to the application for the first time, it is mandatory for the user to choose between one of these three industry roles - either a fisher, a farmer, or a trader. After successful sign up, only the producers (fishers or farmers) can create a new data record for sharing to either another producer or to a trader. A producer can sometimes sell their produce to another producer but a trader can only receive produce from a producer, and therefore the trader cannot create a new data record of a catch or harvest event. 
 
-  <p align="center">
+Upon signing up, a user enters profile data. This is identity data such as an individual’s name or company name, the name of the fishing vessel if a fisher, or the name of the farm if a farmer etc. This static or fixed data, forms part of what are known as Key Data Elements (KDEs) for traceability and auto-fills for each new data record. Dynamic data elements refers to data that may change for each new data record, and for a fisher this may be the port of departure, the date departed, the port of landing, the species of fish, the weight of the fish etc. For a farmer it may be the pond number, the size category and weight of the harvest etc.   
+
+When a producer has filled in the dynamic traceability KDEs related to a harvest of seafood that he/she is selling to a trader, he/she then negotiates on the amount of Fishcoin tokens that he/she wants for the data. As an example, if a fisher is selling $1,000 worth of seafood he or she may ask for 5% of the value of the fish - thus $50. The trader may counter with 1% ($10), they then may meet in the middle and agree on $25 (2.5%) - the equivalent of 25 Fishcoin tokens. The producer then enters 25 tokens and transfers the data record to the trader. The trader accepts and the data transfer is recorded on the blockchain. 
+
+As producers and traders may buy produce from numerous other producers, both user types can create linked records. For example the same trader buys $1,500 and $500 worth of fish from two other fishers, negotiates the same rate (2.5%) and has paid $75 (75 Fishcoin tokens). The trader then sells all fish from these three fishers to one buyer, the trader can select each record from the three fishers and transfer the combined quantity (with three hash codes) in one record to the buyer, and may receive $100 worth of tokens for the data that he/she paid $75 for. 
+
+The Fishcoin tokens can be redeemed for air-time mobile top ups in over 150 countries with over 500 mobile operators. In the near future the tokens will be able to be redeemed for other vouchers that can be redeemed at convenience stores, coffee shops, or to pay for utilities such as water or electricity. 
+
+
+
+- **1.3 Why build or integrate TRACE into your dApp?**<br/>
+Every transaction made on a TRACE integrated dApp incurs a commission. In the case of Fishcoin token transactions, which are valued at 1USD per 1 Fishcoin, a 5% commission is deducted and the developer of the Fishcoin enabled dApp will receive 50% of the commission value. These tokens will be sent to the digital wallet of the developer and are redeemable for services similar to how a fisher or a farmer would redeem the tokens on the application, or for batch transfers to Eachmile for the transfer of fiat currency into the developer’s bank account.* 
+
+ <p align="center">
   <img src="../Trace.png" width="350" title="hover text">
   </p>
-
-	User roles like Grower and Consumer can add new transfer record while trader can add linked records. Consumer/Grower will have to enter the product information along with their own profile information which was auto populated. In product information, unit id, harvest date, location, species and quantities are captured. To send this product, receiver's mobile number is required. The receiver will be able to check his newly received data with provision of accepting and rejecting the product.  
-If user rejects any product then all details of such product get erased from the system. For accepted product, certain number of tokens gets transferred to sender's account and the details are then written on public blockchain Stellar with the help of smart contract. All the transactional records are maintained on blockchain.  
-To utilize the received tokens, another functionality called recharge utility is provided. Because of this function Grower, Consumer and Trader are able to use those received utility tokens for various recharge services like mobile, TV, broadband, electricity and many more utility bill payments.   
+  
+Only Producers can add new transfer records while traders can add linked records. Producers enter the product information whilst their own profile information auto-populates. In product information, information such a production unit id (e.g. farm name for farmers or vessel name for fishers), harvest details such as the data of harvest or dates departed/landed, the location, the species and quantities are to be entered. To send this product information, the receiver must first have downloaded the application, and be a contact within the application itself . The receiver will be able to receive the data and check his newly received data with provision of accepting and rejecting the product. 
  
+If user rejects any product then all details of such product get erased from the system. For accepted product, certain number of tokens gets transferred to sender's account and the details are then written on public blockchain Stellar with the help of smart contract. All the transactional records are maintained on blockchain. 
+ 
+To utilize the received tokens, another functionality called recharge utility is provided. Because of this function Grower, Consumer and Trader are able to use those received utility tokens for various recharge services like mobile, TV, broadband, electricity and many more utility bill payments. 
+
  **1.2 TRACE API reference**<br/>
 Welcome to the TRACE API reference.
 This API serves as the primary gateway to facilitate digital values transfer through TRACE.
