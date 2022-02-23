@@ -1,5 +1,5 @@
 #Contents
-1. WHAT IS TRACE?<br/>
+1. WHY DO WE NEED TRACE?<br/>
 	- 1.1 FUNCTIONALITIES OF TRACE<br/>
 	- 1.2 TRACE API REFERENCE<br/>
 		- 1.2.1. STEPS FOR SIGNUP<br/>
@@ -25,8 +25,12 @@
 	
 
 
-**1.	What is TRACE?**<br/>
-It is an application programming interface, enables to open up applications’ data and functionality to external third-party developers and business partners. Trace allows services and products to communicate with each other and leverage each other’s data and functionality through a documented interface. Developers don't need to know how a Trace API is implemented; they can simply use the Trace API interface to communicate with other products and services.
+**1.	WHY DO WE NEED TRACE **<br/>
+        Traceability is the ability to trace back to where a product came from, and, if applicable, where the product’s ingredients/components were sourced from. It is important to do so to ensure that the products we use and consume are safe, authentic and have been produced in a legal, sustainable, and responsible manner. In the case of seafood supply chains, traceability is important because more than one third of global production is said to be illegal, unreported or unregulated (IUU), up to 80% of certain species groups can be mislabelled, the seafood may contain natural toxins, man-made contaminants, or be unsafe to consume due poor cold chain and bacterial contamination. In addition, most fish stocks are at levels of maximum exploitation or are overfished, and modern day slavery can be prevalent.  These are major risks for companies and for the future or the industry, as well as risks for governments and our food security.
+Although traceability can be achieved through pencil and paper or simple spreadsheets, records can be duplicated or falsified and thus these methods do not build trust within a supply chain. Specific traceability systems exist but they are often built for intra-company, one-up one-down traceability, they are proprietary, and they can be difficult to use and expensive. Further, with upwards of 90% of global seafood production and the industry’s workforce based out of and in developing nations, these systems are often not accessible to those at the first mile of seafood supply chains. Even if a fisher or fish farmer could pay and use a system, there is no clear return on investment, and so we lack traceability. In fact a study commissioned by Standard Chartered Bank found that only 6% of firms have visibility through their supply chains. Why is that concern and why would a bank commission such a study? Well without traceability, the risk for finance and insurance is too high, and we are stuck in a world where, for the most part, we are unable to identify, verify, and reward legal and responsible production for the vast majority of our produce like seafood. 
+That is why Eachmile Technologies designed and built the Trace Protocol. A protocol that in the case of seafood allows developers to build or integrate into decentralised applications a token called Fishcoin. The token can be used as an incentive for the sharing and recording of data in an immutable way that builds trust and provides traceability. It can be integrated into any  blockchain operating system, allows for the market to work out the value of the data, and provides a mechanism by which the market can reward the fishers, farmers and other supply chain actors in developing nations when they redeem the tokens for mobile air-time top ups and other services in the future.
+
+
 
 - **1.1	Functionalities of TRACE**<br/>
 	There are three user roles involved in TRACE system namely Grower, Consumer and Trader. Users will be able to avail the features of application by signing into it. For registering new user, along with user details, industry role is a mandatory field. After successful sign up, transfer records are made visible to user as per industry role. All the registration and login details are stored on Firebase database.  
