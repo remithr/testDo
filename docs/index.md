@@ -56,7 +56,7 @@ The Fishcoin tokens can be redeemed for air-time mobile top ups in over 150 coun
 Every transaction made on a TRACE integrated dApp incurs a commission. In the case of Fishcoin token transactions, which are valued at 1USD per 1 Fishcoin, a 5% commission is deducted and the developer of the Fishcoin enabled dApp will receive 50% of the commission value. These tokens will be sent to the digital wallet of the developer and are redeemable for services similar to how a fisher or a farmer would redeem the tokens on the application, or for batch transfers to Eachmile for the transfer of fiat currency into the developer’s bank account.* 
 
  <p align="center">
-  <img src="../trace1.png" width="350" title="hover text">
+  <img src="../trace1.png" width="700" title="hover text">
   </p>
   
 Only Producers can add new transfer records while traders can add linked records. Producers enter the product information whilst their own profile information auto-populates. In product information, information such a production unit id (e.g. farm name for farmers or vessel name for fishers), harvest details such as the data of harvest or dates departed/landed, the location, the species and quantities are to be entered. To send this product information, the receiver must first have downloaded the application, and be a contact within the application itself . The receiver will be able to receive the data and check his newly received data with provision of accepting and rejecting the product. 
