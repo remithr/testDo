@@ -1,17 +1,20 @@
 #Contents
 1. WHY DO WE NEED TRACE?<br/>
-	- 1.1 FUNCTIONALITIES OF TRACE<br/>
-	- 1.2 TRACE API REFERENCE<br/>
-		- 1.2.1. STEPS FOR SIGNUP<br/>
-		- 1.2.2. USER AUTHENTICATION API<br/>
-		- 1.2.3. TRANSFER RECORDS<br/>
-	- 1.3. TRANSFER VOUCHER TOKEN<br/>	
-	- 1.4 FIND YOUR TRANSACTIONS ON TEST NET<br/>
-2. PRODUCT DEVELOPED USING TRACE PROTOCOL - "mFish"
- 	- 2.1 mFish REFERENCE
- 		- 2.1.1 USER AUTHENTICATION API<br/>
- 		- 2.1.2 TRANSFER RECORDS<br/>
- 		- 2.1.3 Settings
+        - 1.1 Why Do We Need Trace?<br/>
+        - 1.2 What is TRACE?<br/>
+	        - 1.2.1 FUNCTIONALITIES OF TRACE<br/>
+	- 1.3 Why build or integrate TRACE into your dApp?
+2. TRACE API REFERENCE<br/>
+	- 2.1. STEPS FOR SIGNUP<br/>
+	- 2.2. USER AUTHENTICATION API<br/>
+	- 2.3. TRANSFER RECORDS<br/>
+	- 2.4. TRANSFER VOUCHER TOKEN<br/>	
+	- 2.5  FIND YOUR TRANSACTIONS ON TEST NET<br/>
+3. PRODUCT DEVELOPED USING TRACE PROTOCOL - "mFish"
+ 	- 3.1 mFish REFERENCE
+ 		- 3.1.1 USER AUTHENTICATION API<br/>
+ 		- 3.1.2 TRANSFER RECORDS<br/>
+ 		- 3.1.3 Settings
 	- A. PROFILE INFORMATION<br/>
 	- B. TRANSACTION LOG<br/>
 		- I. DEBIT TRANSACTION LOGS OF USER<br/>
@@ -220,7 +223,7 @@ Sample Request Body: {
   "developerWalletID":"GAL4XW2WEFWM2WQYQASQBO5LOZPSLNBSSVWI5GYB2ZUZKHVAUFVKVQ22", "developerWalletSecretKey":"U2FsdGVkX1+fZQy9ogomAWZiEh2a6sMem0ZLnM+jvbisvOQTg4MtXhyxFRHBi33sha5PsAQUugBjeumseAhjMiujMTxodWki19ZzHQw/SOc=", "developerUserID":"prdCzwt9mBSBadXT6VfMZuqAVip2"
 }
 
-**2.4 Find your transactions on test net.**<br/>
+**2.5 Find your transactions on test net.**<br/>
 - a.Fetch the transaction hash from the transaction and go to Stellar test net URL to find details.<br/>
 	http://testnet.stellarchain.io/tx/txn_hash_here<br/>
 Example:<br/>
@@ -591,7 +594,7 @@ Sample Request Body :      {
   "key": "-MmvS-YlNqUQV76YSNOV"
 }
 
-** 3.1.4 Settings**<br/>
+** 3.1.3 Settings**<br/>
 
 **a. Profile information**<br/>
 Fetch user details using userID.<br/>
