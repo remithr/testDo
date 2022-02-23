@@ -62,7 +62,7 @@ If user rejects any product then all details of such product get erased from the
  
 To utilize the received tokens, another functionality called recharge utility is provided. Because of this function Grower, Consumer and Trader are able to use those received utility tokens for various recharge services like mobile, TV, broadband, electricity and many more utility bill payments. 
 
- **1.2 TRACE API reference**<br/>
+ **2 TRACE API reference**<br/>
 Welcome to the TRACE API reference.
 This API serves as the primary gateway to facilitate digital values transfer through TRACE.
 Links to access<br/>
@@ -70,24 +70,24 @@ Links to access<br/>
 	-[TRACE Firebase Swagger](http://52.163.83.160:7772/API-docs)<br/>
 	-[TRACE Blockchain Swagger](http://52.163.83.160:7773/API-docs/#/)<br/>
 	
-- **1.2.1 Steps for Signup**<br/>
+- **2.1 Steps for Signup**<br/>
 1. Signup by [clicking here](http://52.163.83.160:7771)
-2. User has to Sign up from portal using valid email address and select anyone of the three roles. (Grower, Consumer, Trader).
+2. User has to Sign up from portal using valid email address and select anyone of the three roles. (Fisher, Farmer, Trader).
   <p align="center">
   <img src="../signup.png" width="700" height="400" title="hover text">
   </p>
 3. A verification email will be sent to the registered email address<br/>
-4. Verify the email link received at the registered email address
+4. Verify the email address received at the registered email address
   <p align="center">
   <img src="../verification-link.png" width="700" height="400" title="hover text">
   </p>
-5. Login once to activate your account and add the profile details.
+5. Login to activate your account and add user profile details.
  <p align="center">
   <img src="../signin.png" width="700" height="400" title="hover text">
   </p>
 
 
-- **1.2.2	User Authentication API**<br/>
+- **2.2	User Authentication API**<br/>
 Once the initial signup and verification process is done, you can use this API to fetch the user details. UserID is the value that will be used to uniquely identify the user and also will be required as a base for all the user related operations. 
 
 API: UserAuthentication<br/>
@@ -104,10 +104,10 @@ Sample Request Body:{
   "password": "Abc@123"
 }
 
-- **1.2.3 Transfer Records**<br/>
+- **2.3 Transfer Records**<br/>
 There are multiple API’s that can be consumed for fetching details of records, below is the list provided with it’s use, API end points and parameters.
-	- **1. Fetching sent records**<br/>
-This API will fetch all the records that are sent by user to fisher, farmer, trader along with status of records.<br/>
+	- **2.3.1. Fetching sent records**<br/>
+This API will fetch all the records that are sent by user to fishers, farmers and traders along with status of records.<br/>
 Endpoint:cmxAPI/firebase/getSentRecordsByUser<br/>
 Request Body Parameters:<br/>
 
@@ -119,7 +119,7 @@ Sample Request Body:{
   "userId": "52QqKTpme1VAMZgsqSycLMhuTpd"
 }
 
-- **2. Fetching received records.**<br/>
+- **2.3.2 Fetching received records.**<br/>
 This API will fetch all the records that are received by user from fisher, farmer, trader along with status of records.<br/>
 Endpoint:cmxAPI/firebase/getReceivedRecordsByUser<br/>
 Request Body Parameters:<br/>
@@ -132,13 +132,13 @@ Sample Request Body: {
   "userId": "52QqKTpme1VAMZgsqSycLMhuTpd"
 }
 
-- **3 Fetching country list.**<br/>
+- **2.3.3 Fetching country list.**<br/>
 Used to fetch all the countries with country code.<br/>
 Endpoint:cmxAPI/firebase/getCountryList<br/>
 Method:GET<br/>
 
 
-**1.3 Transfer Voucher Tokens**<br/>
+**2.4 Transfer Voucher Tokens**<br/>
 - **a. Get Wallet balance**<br/>
 To fetch Stellar wallet balance<br/>
 API: /AccountDetails<br/>
@@ -183,7 +183,7 @@ Sample Request Body:
 This API is used to write IPFS hash on the stellar blockchain, it returns the Stellar Transaction Hash
 
 This API is used to transfer Voucher token assets to merchant and developer account from user account. For the feature developed by the developer, the developer would be getting a 50% cut of merchant fees. The developer can get the details required for the fee transfer through the account details API. The below mentioned fields would be required for successful transfer of fees.
-You can get the below values from User Authentication API (1.2.2) above.
+You can get the below values from User Authentication API (2.2) above.
 developerWalletID : The Public key assigned on Account creation.
 developerWalletSecretKey: The secret key field.
 developerUserID: User ID of developer.
@@ -220,7 +220,7 @@ Sample Request Body: {
   "developerWalletID":"GAL4XW2WEFWM2WQYQASQBO5LOZPSLNBSSVWI5GYB2ZUZKHVAUFVKVQ22", "developerWalletSecretKey":"U2FsdGVkX1+fZQy9ogomAWZiEh2a6sMem0ZLnM+jvbisvOQTg4MtXhyxFRHBi33sha5PsAQUugBjeumseAhjMiujMTxodWki19ZzHQw/SOc=", "developerUserID":"prdCzwt9mBSBadXT6VfMZuqAVip2"
 }
 
-**1.4 Find your transactions on test net.**<br/>
+**2.4 Find your transactions on test net.**<br/>
 - a.Fetch the transaction hash from the transaction and go to Stellar test net URL to find details.<br/>
 	http://testnet.stellarchain.io/tx/txn_hash_here<br/>
 Example:<br/>
@@ -228,7 +228,7 @@ Example:<br/>
 Then below is the blockchain tracking URL-<br/>
 	http://testnet.stellarchain.io/tx/ffa62016e1c20e5042ca59c2979545e20f6fa02de36824286515e12dd5e6abf9<br/>
 
-**2.0 Product developed using Trace protocol**<br/>
+**3.0 Product developed using Trace protocol**<br/>
 - Fish and other sea food products are harvested, processed by farmers and then sold to local suppliers. They provide these to region suppliers who in turn sells it to the customers. But the industry is often unsustainable, illegal and inefficient.
 To tackle these problems, a system was developed to check traceability and quality maintenance using Blockchain technology. All the data was shared seamlessly using a Blockchain. A mobile + Web application was designed to capture data from fisherman. 
 In this project we developed and integrated TRACE API which serves as the primary gateway to facilitate digital values transfer.
@@ -241,9 +241,9 @@ Benefits for client after developing and integrating TRACE system <br/>
 - Reward mechanism for every user role in terms of tokens.
 - Through the system the client witnessed a hike in record collection.
 
-	- 2.1 mFish reference
+	- 3.1 mFish reference
  
-- **2.1.1	User Authentication API**<br/>
+- **3.1.1	User Authentication API**<br/>
 Once the initial signup and verification process is done, you can use this API to fetch the user details. UserID is the value that will be used to uniquely identify the user and also will be required as a base for all the user related operations. 
 
 API: UserAuthentication<br/>
@@ -260,7 +260,7 @@ Sample Request Body:{
   "password": "Abc@123"
 }
 
-- **2.1.2 Transfer Records**<br/>
+- **3.1.2 Transfer Records**<br/>
 There are multiple API’s that can be consumed for fetching details of records, below is the list provided with it’s use, API end points and parameters.
 	- **1. Fetching sent records**<br/>
 This API will fetch all the records that are sent by user to fisher, farmer, trader along with status of records.<br/>
@@ -313,7 +313,7 @@ A user can send a record to Fisher Farmer or Trader. The request body will chang
 Endpoint:cmxAPI/firebase/getReceivedRecordsByUser<br/>
 
 Request Body:<br/>
-- a. Grower:<br/>
+- a. Fisher:<br/>
 
 	Parameter | Data type | Required
 	--------- | --------- | --------
@@ -402,7 +402,7 @@ Example.
 	"FishcoinAssets": 1
 }
 
-- b. Consumer:
+- b. Farmer:
 	Parameter | Data type | Required/Default
 	--------- | --------- | --------
 	ArrivalPort | String | No
@@ -591,7 +591,7 @@ Sample Request Body :      {
   "key": "-MmvS-YlNqUQV76YSNOV"
 }
 
-** 2.1.4 Settings**<br/>
+** 3.1.4 Settings**<br/>
 
 **a. Profile information**<br/>
 Fetch user details using userID.<br/>
